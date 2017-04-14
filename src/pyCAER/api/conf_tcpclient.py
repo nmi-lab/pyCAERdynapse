@@ -1,7 +1,7 @@
 # api file for pyNCS conf
 # import base classes from pyNCS
-from pyNCS.api.ConfAPI import ConfiguratorBase
-from pyNCS import doc_inherit #for inheriting documentation from base classes
+from pyNCSre.api.ConfAPI import ConfiguratorBase
+from pyNCSre import doc_inherit #for inheriting documentation from base classes
 from pyCAER import caer_communication
 from lxml import etree
 
