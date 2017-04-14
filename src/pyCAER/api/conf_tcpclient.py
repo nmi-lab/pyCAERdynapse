@@ -48,7 +48,7 @@ class Configurator(ConfiguratorBase):
         self.client = caer_communication.caerCommunicationControlServer(host=self.host, port_control=self.port)
         self.open()
 
-    def load_parameter_definitions(self, inp):
+    def load_parameter_definitions(self, inp, chip):
         '''
         Parse xml file or element tree to generate the object
         '''
@@ -58,9 +58,10 @@ class Configurator(ConfiguratorBase):
         else:
             doc = inp
         alld = dict()
+        doc = doc.find('.//node[@name="DYNAPSE_CONFIG_{0}"]'.format(chip.id.upper()))
         for biases_root in doc.findall('.//node[@name="bias"]'):
             for br in biases_root.iterfind('.//node'):
-                new_parameter = Parameter('U'+biases_root.attrib['path'][-7]+'_'+br.attrib['name'], br.attrib['path'])
+                new_parameter = Parameter(br.attrib['name'], br.attrib['path'])
                 for attr in br.iterfind('.//attr'):
                     new_parameter.add_attr(attr.attrib['key'],attr.attrib,attr.text)
                 alld[new_parameter.SignalName] = new_parameter

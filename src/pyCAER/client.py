@@ -13,6 +13,13 @@ from utils import *
 GOEVENT = np.array([-1, 0], dtype='uint32').tostring() #for stim = None, this ensures that the hold is released.
 HOLDEVENT = np.array([-2, 0], dtype='uint32').tostring() #Hold and reset: the aex device file is opened immediately before the next event is receied
 
+VALID_SHIFT = 0
+VALID_WIDTH = 1
+VALID_MASK = 2**VALID_WIDTH-1
+CHIP_SHIFT = 6
+CHIP_WIDTH = 4
+CHIP_MASK = 2**CHIP_WIDTH-1
+CHIP_NMASK = 2**32-1 - ((2**CHIP_WIDTH-1)<<CHIP_SHIFT)
 
 
 class AEDATClientBase(threading.Thread):
@@ -22,14 +29,12 @@ class AEDATClientBase(threading.Thread):
     #Singleton: make sure a client is only instantiated once in a session
     def __init__(self,
             host='gillygaloo.ss.uci.edu',
-            fps=25.,
             port=7778,
             autostart=True,
-            qsize=1024,
+            qsize=4096,
             ):
         '''
         *MonChannelAddress:* Monitor Channel Addressing object, if omitted, default channel is taken
-        *fps:* Number of fetches per second. Corresponds to the inverse of the monitor client socket timeout. if a real-time visualization software is used, this must be equal to its frame rate. (Default 25.)
         *host:* Monitoring AEDAT server hostname.
         *port:* Port of the Monitoring Server (Default 50001)
         *qsize:* The maxsize of the queue
@@ -57,7 +62,7 @@ class AEDATClientBase(threading.Thread):
         # Set the socket to non-blocking (with timeout) to avoid the thread
         # being stuck. Because of this, I must catch EWOULDBLOCK error
         #Frame period
-        self.fT = 1. / float(fps)
+        self.fT = 5.0
         self.sock.settimeout(self.fT)
 
 
@@ -67,15 +72,15 @@ class AEDATClientBase(threading.Thread):
 
     def run(self):
         while self.finished.isSet() != True:
-            t0 = time.time()
+            #t0 = time.time()
 
             with self.recvlock:
                 self.fetch_raw()
 
             #Fastest frame rate should be fT. Wait in case we've been faster
-            t_left = self.fT - (time.time() - t0)
-            if t_left > 0:
-                time.sleep(t_left)
+            #t_left = self.fT - (time.time() - t0)
+            #if t_left > 0:
+            #    time.sleep(t_left)
             # Ok now check how much data is available and choose a multiple of
             # 8 (AE packet size
 
@@ -107,6 +112,7 @@ class AEDATMonClient(AEDATClientBase):
 
     def _recv_packet(self):
         data_ev_head = self.sock.recv(28)  # we read the header of the packet
+
         
         # read header
         eventtype = struct.unpack('H', data_ev_head[0:2])[0]
@@ -208,7 +214,15 @@ class AEDATMonClient(AEDATClientBase):
                 continue
 
             if evs.get_nev() > 0:
-                out.add_adtm(evs.get_ad(), evs.get_tm())
+                ad = evs.get_ad()
+                tm = evs.get_tm()
+                valid = (ad&VALID_MASK).astype('bool')
+                chip = (ad[valid]>>CHIP_SHIFT)&CHIP_MASK
+                ad[valid] = ad[valid]&CHIP_NMASK
+                ad = ad[valid]>>VALID_WIDTH
+                tm = tm[valid]
+                ad += chip<<28
+                out.add_adtm(ad,tm)
             #Assumes isi
             data_delta = (out.get_tm()[-1] - out.get_tm()[0])
                     
@@ -225,7 +239,6 @@ class AEDATClient(AEDATMonClient):
     def __init__(self,
             host='gillygaloo.ss.uci.edu',
             host_stim=None,
-            fps=25.,
             port_mon=7778,
             port_stim=50002,
             autostart=True,
@@ -234,7 +247,6 @@ class AEDATClient(AEDATMonClient):
         '''
         *MonChannelAddress:* Monitor Channel Addressing object, if omitted, default channel is taken
         *SeqChannelAddress:* Sequencer Channel Addressing object, if omitted, default channel is taken
-        *fps:* Number of fetches per second. Corresponds to the inverse of the monitor client socket timeout. if a real-time visualization software is used, this must be equal to its frame rate. (Default 25.)
         *host:* Monitoring and Sequencing AEDAT server hostname. (Must be same)
         *port_mon:* Port of the Monitoring Server (Default 50001)
         *port_stim:* Port of the Monitoring Server (Default 50002)
@@ -246,7 +258,7 @@ class AEDATClient(AEDATMonClient):
 
         AEDATMonClient.__init__(
                 self, 
-                fps=fps, host=host,
+                host=host,
                 port=port_mon,
                 autostart=False,
                 qsize=qsize,
