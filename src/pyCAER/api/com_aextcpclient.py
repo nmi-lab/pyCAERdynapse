@@ -1,4 +1,4 @@
-from pyNCS.api.ComAPI import *
+from pyNCSre.api.ComAPI import *
 import pyCAER.client as caerclient
 from pyCAER.utils import doc_inherit
 
