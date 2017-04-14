@@ -112,6 +112,10 @@ class AEDATMonClient(AEDATClientBase):
 
     def _recv_packet(self):
         data_ev_head = self.sock.recv(28)  # we read the header of the packet
+        while data_ev_head<28:
+            data_ev_head += self.sock.recv(28)
+            print 'reread'
+
 
         
         # read header
