@@ -6,7 +6,7 @@ import fcntl
 from termios import FIONREAD
 from contextlib import contextmanager
 #AER related
-import pyNCS.pyST as pyST
+import pyNCSre.pyST as pyST
 from utils import *
 
 #Special events used to control reset and synchonization
