@@ -1,7 +1,7 @@
 from collections import defaultdict
 from contextlib import contextmanager
-from pyNCS.pyST import events
-from pyNCS.pyST import channelEvents
+from pyNCSre.pyST import events
+from pyNCSre.pyST import channelEvents
 import numpy as np
 import errno
 import time

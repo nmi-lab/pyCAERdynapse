@@ -6,8 +6,7 @@ import numpy as np
 import socket
 
 #AER related imports
-from pyAex import *
-from pyNCS.pyST import *
+from pyNCSre.pyST import *
 
 
 class PeriodicStimulator(threading.Thread):
