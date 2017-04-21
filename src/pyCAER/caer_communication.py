@@ -198,7 +198,7 @@ class caerCommunicationControlServer:
         msg_packet = self.s_commands.recv(struct.unpack('H', msg_header[2:4])[0])
         action = struct.unpack('B',msg_header[0])[0]
         second = struct.unpack('B',msg_header[1])[0]
-        print(string+' action='+str(action)+' type='+str(second)+' message='+msg_packet)
+        #print(string+' action='+str(action)+' type='+str(second)+' message='+msg_packet)
         return msg_packet
 
     def load_biases(self, xml_file = 'cameras/davis240c.xml', dvs128xml = False):
@@ -229,7 +229,7 @@ class caerCommunicationControlServer:
                             final_v = str(biases[j].firstChild.data)
                             #print final_v
                             cear_command = base_aa + " " + base_ab + " " + base_ac + " " + base_ad + " " + final_v
-                            print cear_command
+                            #print cear_command
                             self.send_command(cear_command)                  
         else:
             xmldoc = minidom.parse(xml_file)
@@ -260,7 +260,7 @@ class caerCommunicationControlServer:
                                         final_v = str(bias_values[k].firstChild.data)
                                         #print final_v
                                         cear_command = base_aa + " " + base_ab + " " + base_ac + " " + base_ad + " " + final_v
-                                        print cear_command
+                                        #print cear_command
                                         self.send_command(cear_command)                  
 
 if __name__ == '__main__':

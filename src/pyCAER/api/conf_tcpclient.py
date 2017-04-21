@@ -91,6 +91,18 @@ class Configurator(ConfiguratorBase):
         command = 'put {path} {key} {type} {value}'.format( path = path, key = key, type=type, value = param_value)
         self.client.send_command(command)
 
+    def get_param_names(self):
+        #CONVENIENCE FUNCTION. IMPLEMENTATION IS NOT REQUIRED
+        '''
+        Returns names of all the parameters
+        '''
+        import numpy as np
+        kv_list = []
+        for name in self.parameters.keys():
+            for key, a in self.parameters[name].attr.iteritems():
+                if key in ['coarseValue','fineValue']: kv_list.append(name+"."+key)      
+        return np.sort(kv_list).tolist()
+
 
     @doc_inherit
     def get_parameter(self, param_name):
@@ -100,18 +112,21 @@ class Configurator(ConfiguratorBase):
             type = self.parameters[name].attr[key].data['type']
             command = 'get {path} {key} {type}'.format( path = path, key = key, type=type)
             value = self.client.send_command(command).strip('\x00')
+            if key in ['coarseValue','fineValue']: value = int(value)
             self.parameters[name].attr[key].value = value
             return value
         else:
             name = param_name
             path = self.parameters[name].path
+            kv_list = []
             for key, a in self.parameters[name].attr.iteritems():
                 type = a.data['type']
                 command = 'get {path} {key} {type}'.format( path = path, key = key, type=type)
-                value = self.client.send_command(command).strip('\x00')
+                value = int(self.client.send_command(command).strip('\x00'))
+                if key in ['coarseValue','fineValue']: value = int(value)
                 self.parameters[name].attr[key].value = value
-                print value
-            return self.parameters
+                kv_list.append((name+"."+key,value))
+            return kv_list
 
         
 
