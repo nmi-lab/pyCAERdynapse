@@ -1,6 +1,7 @@
 import numpy as np
 
 def clear_sram_memory(sramId = 1, coreId = 0, chipId = 0):
+    bits = []
     for neuronId in range(256):
         #we loop over all cores
         dx = 0;
@@ -8,8 +9,8 @@ def clear_sram_memory(sramId = 1, coreId = 0, chipId = 0):
         dy = 0;
         sy = 0;
         destcoreId = 0;  #one hot coded    
-        bits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destcoreId << 18 | sy << 27 | dy << 25 | dx << 22 | sx << 24 | coreId << 28 | chipId <<30;
-        return np.array(bits).astype('uint64').tostring()
+        bits.append(neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destcoreId << 18 | sy << 27 | dy << 25 | dx << 22 | sx << 24 | coreId << 28 | chipId <<30);
+    return np.array(bits).astype('uint64').tostring()
 
 def set_neurons_sram(
         chipId,

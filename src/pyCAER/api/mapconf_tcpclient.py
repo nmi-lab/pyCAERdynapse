@@ -21,6 +21,7 @@ class Mappings(MappingsBase):
 
     @doc_inherit
     def set_mappings(self, mappings):
+        self.clear_mappings()
         mappings = np.array(mappings, dtype='uint32')
         nsetup = self.neurosetup
         mon_chad = nsetup.mon.addrPhysicalExtract(mappings[:,0])
@@ -51,12 +52,15 @@ class Mappings(MappingsBase):
         for d in np.unique(post_dstcore):
             self.clear_cam_chip_core(chipId, d)
 
+        print dst_cores_1hot
         data = []
         for i in conn2make:
             c = pre_srccore[i]
             n = pre_addr[i]
             d = dst_cores[i]
             bits = set_neurons_sram(chipId, coreId = c, sramId = 1, neurons = [n], destcoreId= d) 
+            if self.debug:
+                print "chipiId",chipId,"sram",1,"pre", n,"post","precore",c,"post_core code",d
             data.append(bits)
 
         for i in range(len(mappings)):
@@ -74,6 +78,7 @@ class Mappings(MappingsBase):
                         destcoreId = d)
                 data.append(bits)
                 self.cams_used[chipId,d,n]+=1
+                print "chipiId",chipId,"cam",self.cams_used[chipId,d,n],"ei",post_ei[i],"fs",post_fs[i],"pre", pre_addr[i],"post",n,"precore",pre_srccore[i],"post_core",d
             else:
                 print "exceeded CAM capacity on %d"%i
         
@@ -109,7 +114,7 @@ class Mappings(MappingsBase):
 
     @doc_inherit
     def clear_mappings(self):
-        self.sram_mappings[:,:,:,:,:] = -1
+        self.sram_mappings[:,:,:,:,:] = 0
         self.cams_used[:,:,:] = 0
         self.cur_mappings = []
         return None
@@ -126,8 +131,6 @@ class Mappings(MappingsBase):
     def clear_sram_chip_core(self, chipId, coreId):
         data = []
         data.append(clear_sram_memory(chipId=chipId, sramId=1, coreId=coreId))
-        data.append(clear_sram_memory(chipId=chipId, sramId=2, coreId=coreId))
-        data.append(clear_sram_memory(chipId=chipId, sramId=3, coreId=coreId))
         print 'Clearing SRAM on ChipID: {0} CoreID {1}'.format(chipId,coreId)
 
         self.commit(data)
