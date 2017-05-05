@@ -46,21 +46,6 @@ def empty_context():
     yield
 
 
-def set_MAPHOST(MAPHOST):
-    aex_globals.MAPHOST = str(MAPHOST)
-
-
-def get_MAPHOST():
-    return aex_globals.MAPHOST
-
-
-def set_MAPVERS(MAPVERS):
-    aex_globals.MAPVERS = float(MAPVERS)
-
-
-def get_MAPVERS():
-    return aex_globals.MAPVERS
-
 ## {{{ http://code.activestate.com/recipes/576862/ (r1)
 """
 doc_inherit decorator

@@ -134,6 +134,9 @@ class Configurator(ConfiguratorBase):
     def reset(self):
         pass
 
+
+
+
 if __name__ == '__main__':
     c = conf_nettcpclient.Configurator(host='gillygaloo.ss.uci.edu')
     c.load_parameter_definitions('/home/eneftci/Projects/code/C/caer/caer-config.xml')
