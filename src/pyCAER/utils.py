@@ -12,6 +12,10 @@ import globals
 from getpass import getuser
 
 
+def flatten(l):
+    return [item for sublist in l for item in sublist]
+
+
 def is_file_empty(filename):
     return os.stat(filename)[6] == 0
 
