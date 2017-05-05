@@ -22,8 +22,9 @@ class Mappings(MappingsBase):
     @doc_inherit
     def set_mappings(self, mappings):
         mappings = np.array(mappings, dtype='uint32')
-        mon_chad = self.neurosetup.mon.addrPhysicalExtract(mappings[:,0])
-        seq_chad = self.neurosetup.seq.addrPhysicalExtract(mappings[:,1])
+        nsetup = self.neurosetup
+        mon_chad = nsetup.mon.addrPhysicalExtract(mappings[:,0])
+        seq_chad = nsetup.seq.addrPhysicalExtract(mappings[:,1])
         channels = [i for i,c in enumerate(mon_chad) if c is not None ] 
         assert len(channels) == 1, 'cross chip connections not yet supported'
         
@@ -42,7 +43,7 @@ class Mappings(MappingsBase):
         conn2make = np.nonzero(sram_mappings[chipId, pre_srccore, pre_addr, 1, post_dstcore]!=1)[0]
         sram_mappings[chipId, pre_srccore[conn2make],pre_addr[conn2make],1,post_dstcore[conn2make]]=1
         dst_cores_1hot = sram_mappings[chipId, pre_srccore[conn2make],pre_addr[conn2make],1,:4]
-        dst_cores = np.sum([dst_cores_1hot[:,i]*2**(3-i) for i in range(4)], axis=0)
+        dst_cores = np.sum([dst_cores_1hot[:,i]*2**i for i in range(4)], axis=0)
 
         for d in np.unique(pre_srccore):
             self.clear_sram_chip_core(chipId, d)
@@ -116,7 +117,7 @@ class Mappings(MappingsBase):
     @doc_inherit
     def clear_cam_chip_core(self, chipId, coreId):
         data =  clear_core_cam(chipId=chipId, coreId=coreId)
-        print 'Clearing CAM on ChipID: {0} CoreID {0}'.format(chipId,coreId)
+        print 'Clearing CAM on ChipID: {0} CoreID {1}'.format(chipId,coreId)
         self.commit(data)
 
         return None
@@ -152,6 +153,6 @@ class Mappings(MappingsBase):
                 self.client.send(''.join(data[d:d+64]))
                 d+=64
         if self.debug:
-            print "Successfully written {0} connections".format(len(data))
+            print "Successfully written {0} bytes".format(len(data))
         
         
