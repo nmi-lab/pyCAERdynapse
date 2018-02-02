@@ -20,12 +20,12 @@ class Mappings(MappingsBase):
         super(self.__class__, self).__init__()
 
     @doc_inherit
-    def set_mappings(self, mappings):
-        self.clear_mappings()
+    def add_mappings(self, mappings):
         mappings = np.array(mappings, dtype='uint32')
         nsetup = self.neurosetup
         mon_chad = nsetup.mon.addrPhysicalExtract(mappings[:,0])
         seq_chad = nsetup.seq.addrPhysicalExtract(mappings[:,1])
+
         channels = [i for i,c in enumerate(mon_chad) if c is not None ] 
         assert len(channels) == 1, 'cross chip connections not yet supported'
         
@@ -34,7 +34,7 @@ class Mappings(MappingsBase):
         post_fs, post_ei, post_addr, post_dstcore = seq_chad[ch]
 
         if ch ==1:
-            #Wordaround for chipId mismatch
+            #Wordaround for chipId=1 mismatch
             chipId = 0 
         else:
             chipId = ch
@@ -90,6 +90,13 @@ class Mappings(MappingsBase):
         return d
 
 
+
+    @doc_inherit
+    def set_mappings(self, mappings):
+        self.clear_mappings()
+        self.add_mappings(mappings)
+
+
     def open(self):
         '''
         Open MapClient
@@ -121,6 +128,10 @@ class Mappings(MappingsBase):
 
     @doc_inherit
     def clear_cam_chip_core(self, chipId, coreId):
+        '''
+        clear_cam_chip_core(self, chipId, coreId)
+        Write zeros to all CAMs (deletes all connection in a core)
+        '''
         data =  clear_core_cam(chipId=chipId, coreId=coreId)
         print 'Clearing CAM on ChipID: {0} CoreID {1}'.format(chipId,coreId)
         self.commit(data)

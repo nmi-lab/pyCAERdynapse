@@ -79,7 +79,6 @@ class caerCommunicationControlServer:
         self.cmd_part_key = 2
         self.cmd_part_type = 3
         self.cmd_part_value = 4
-        self.data_buffer_size = 4069*30 ###???
         self.NODE_EXISTS = 0
         self.ATTR_EXISTS = 1
         self.GET = 2
@@ -94,7 +93,7 @@ class caerCommunicationControlServer:
           parse string command
             es string: put /1/1-DAVISFX2/'+str(sensor)+'/aps/ Exposure int 10
         '''    
-        databuffer = bytearray(b'\x00' * self.data_buffer_size)
+        databuffer = bytearray(4096)
         node_length = 0
         key_length = 0
         action_code = -1
@@ -142,8 +141,8 @@ class caerCommunicationControlServer:
                     databuffer[8:9] = struct.pack('H', 0)
                     databuffer[10:10+node_length] = str(cmd_parts[self.cmd_part_node])
                     databuffer[10+node_length:10+node_length+key_length] = str(cmd_parts[self.cmd_part_key])
-                    databuffer[10+node_length+key_length:10+node_length+key_length+value_length] = str('')
-                    databuffer_length = 10 + node_length + key_length + value_length
+                    databuffer[10+node_length+key_length:10+node_length+key_length] = str('')
+                    databuffer_length = 10 + node_length + key_length 
                     #raise Exception
 
         return databuffer[0:databuffer_length]
@@ -198,7 +197,7 @@ class caerCommunicationControlServer:
         msg_packet = self.s_commands.recv(struct.unpack('H', msg_header[2:4])[0])
         action = struct.unpack('B',msg_header[0])[0]
         second = struct.unpack('B',msg_header[1])[0]
-        #print(string+' action='+str(action)+' type='+str(second)+' message='+msg_packet)
+        print(string+' action='+str(action)+' type='+str(second)+' message='+msg_packet)
         return msg_packet
 
     def load_biases(self, xml_file = 'cameras/davis240c.xml', dvs128xml = False):

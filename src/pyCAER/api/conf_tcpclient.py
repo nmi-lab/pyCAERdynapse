@@ -58,7 +58,7 @@ class Configurator(ConfiguratorBase):
         else:
             doc = inp
         alld = dict()
-        doc = doc.find('.//node[@name="DYNAPSE_CONFIG_{0}"]'.format(chip.id.upper()))
+        doc = doc.find('.//node[@name="{0}"]'.format(chip.id.upper()))
         for biases_root in doc.findall('.//node[@name="bias"]'):
             for br in biases_root.iterfind('.//node'):
                 new_parameter = Parameter(br.attrib['name'], br.attrib['path'])
