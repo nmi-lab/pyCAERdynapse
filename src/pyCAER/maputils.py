@@ -16,7 +16,7 @@ def set_neurons_sram(
         chipId,
         coreId,
         sramId = 1,
-        neurons = range(256),
+        neurons = list(range(256)),
         destcoreId = 0,
         dx = 0,
         sx = 0,

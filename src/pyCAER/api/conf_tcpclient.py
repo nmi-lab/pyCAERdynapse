@@ -78,7 +78,7 @@ class Configurator(ConfiguratorBase):
         '''
         Close AmdaClient
         '''
-        print 'closing'
+        print('closing')
         self.client.close_communication_command()
         del self.client
         super(self.__class__, self).close()
@@ -98,8 +98,8 @@ class Configurator(ConfiguratorBase):
         '''
         import numpy as np
         kv_list = []
-        for name in self.parameters.keys():
-            for key, a in self.parameters[name].attr.iteritems():
+        for name in list(self.parameters.keys()):
+            for key, a in list(self.parameters[name].attr.items()):
                 if key in ['coarseValue','fineValue']: kv_list.append(name+"."+key)      
         return np.sort(kv_list).tolist()
 
@@ -119,7 +119,7 @@ class Configurator(ConfiguratorBase):
             name = param_name
             path = self.parameters[name].path
             kv_list = []
-            for key, a in self.parameters[name].attr.iteritems():
+            for key, a in list(self.parameters[name].attr.items()):
                 type = a.data['type']
                 command = 'get {path} {key} {type}'.format( path = path, key = key, type=type)
                 value = int(self.client.send_command(command).strip('\x00'))

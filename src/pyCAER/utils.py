@@ -8,7 +8,7 @@ import time
 import sys
 import os
 from os import system
-import globals
+from . import globals
 from getpass import getuser
 
 
@@ -41,7 +41,7 @@ def dlist_to_dict(mapping):
     #sort list
     mapping_dict = defaultdict(list)
     func = lambda srctgt: mapping_dict[srctgt[0]].append(srctgt[1])
-    map(func, mapping)
+    list(map(func, mapping))
     return mapping_dict
 
 

@@ -3,12 +3,12 @@
 # python class to control and save data from cAER via tcp
 # author  Federico Corradi - federico.corradi@inilabs.com
 # ############################################################
-from __future__ import division
+
 import os
 import struct
 import socket
 import threading
-import Queue
+import queue
 import sys
 import time
 import errno
@@ -99,7 +99,7 @@ class caerCommunicationControlServer:
         action_code = -1
         cmd_parts = command.split()
         if( len(cmd_parts) > self.max_cmd_parts):
-            print 'Error: command is made up of too many parts'
+            print('Error: command is made up of too many parts')
             return
         else:
             if( cmd_parts[self.cmd_part_action] != None):      # we got come action 
@@ -155,8 +155,8 @@ class caerCommunicationControlServer:
         try:
             self.s_commands = socket.socket()
             self.s_commands.connect((self.host, self.port_control))
-        except socket.error, msg:
-            print 'Failed to create socket %s' % msg
+        except socket.error as msg:
+            print(('Failed to create socket %s' % msg))
             sys.exit()
 
     def get_header(self, data):
@@ -179,9 +179,9 @@ class caerCommunicationControlServer:
         '''
         try:
             self.s_commands.close()
-        except socket.error, msg:
-            print 'Failed to close socket %s' % msg
-            print socket.error
+        except socket.error as msg:
+            print(('Failed to close socket %s' % msg))
+            print((socket.error))
             sys.exit()
 
 
@@ -197,7 +197,7 @@ class caerCommunicationControlServer:
         msg_packet = self.s_commands.recv(struct.unpack('H', msg_header[2:4])[0])
         action = struct.unpack('B',msg_header[0])[0]
         second = struct.unpack('B',msg_header[1])[0]
-        print(string+' action='+str(action)+' type='+str(second)+' message='+msg_packet)
+        print((string+' action='+str(action)+' type='+str(second)+' message='+msg_packet))
         return msg_packet
 
     def load_biases(self, xml_file = 'cameras/davis240c.xml', dvs128xml = False):
@@ -213,13 +213,13 @@ class caerCommunicationControlServer:
             #loop over xml file, get bias values and load them
             for i in range(len(nodes)):
                 if(nodes[i].attributes['name'].value == 'bias' ):
-                    attrs = dict(nodes[i].attributes.items())
+                    attrs = dict(list(nodes[i].attributes.items()))
                     base_aa = 'put'
                     bias_node = nodes[i]
                     biases = bias_node.childNodes
                     for j in range(len(biases)):
                         if(biases[j].hasChildNodes()):
-                            base_a = dict(biases[j].attributes.items())
+                            base_a = dict(list(biases[j].attributes.items()))
                             base_ab = str(attrs['path'])
                             base_b =  base_a
                             #print base_b
@@ -239,20 +239,20 @@ class caerCommunicationControlServer:
             #loop over xml file, get bias values and load them
             for i in range(len(nodes)):
                 if(nodes[i].attributes['name'].value == 'bias' ):
-                    attrs = dict(nodes[i].attributes.items())
+                    attrs = dict(list(nodes[i].attributes.items()))
                     base_aa = 'put'
                     bias_node = nodes[i]
                     biases = bias_node.childNodes
                     for j in range(len(biases)):
                         if(biases[j].hasChildNodes()):
-                            base_a = dict(biases[j].attributes.items())
+                            base_a = dict(list(biases[j].attributes.items()))
                             #print base_a
                             base_ab = (base_a['path'])
                             if(biases[j].hasChildNodes()):
                                 bias_values = biases[j].childNodes
                                 for k in range(len(bias_values)):
                                     if(bias_values[k].hasChildNodes()):
-                                        base_b = dict(bias_values[k].attributes.items()) 
+                                        base_b = dict(list(bias_values[k].attributes.items())) 
                                         #print base_b
                                         base_ac = (base_b['key'])
                                         base_ad = (base_b['type'])

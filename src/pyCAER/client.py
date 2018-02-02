@@ -1,5 +1,5 @@
 import threading
-import Queue
+import queue
 import socket, struct
 #For probing network buffer
 import fcntl
@@ -7,7 +7,7 @@ from termios import FIONREAD
 from contextlib import contextmanager
 #AER related
 import pyNCSre.pyST as pyST
-from utils import *
+from .utils import *
 
 #Special events used to control reset and synchonization
 GOEVENT = np.array([-1, 0], dtype='uint32').tostring() #for stim = None, this ensures that the hold is released.
@@ -41,10 +41,10 @@ class AEDATClientBase(threading.Thread):
         '''
         threading.Thread.__init__(self)
         self.daemon = True  # The entire Python program exits when no alive non-daemon threads are left
-        print "Connecting to " + host
+        print(("Connecting to " + host))
         #self.aexfd = os.open("/dev/aerfx2_0", os.O_RDWR | os.O_NONBLOCK)
         self.finished = threading.Event()
-        self.buffer = Queue.Queue(qsize)  # 8192 packets in Queue=~5min
+        self.buffer = queue.Queue(qsize)  # 8192 packets in Queue=~5min
 
         self.MonChannelAddress = pyST.getDefaultMonChannelAddress()
 
@@ -94,7 +94,7 @@ class AEDATClientBase(threading.Thread):
             while True:
                 try:
                     self.buffer.get(False)
-                except Queue.Empty:
+                except queue.Empty:
                     break
 
     def stop(self):
@@ -114,7 +114,7 @@ class AEDATMonClient(AEDATClientBase):
         data_ev_head = self.sock.recv(28)  # we read the header of the packet
         while len(data_ev_head)<28:
             data_ev_head += self.sock.recv(28-len(data_ev_head))
-            print 'reread'
+            print('reread')
 
 
         
@@ -140,7 +140,7 @@ class AEDATMonClient(AEDATClientBase):
         try:
             self.buffer.put(ev, block=False)
         #Drop last and put new
-        except Queue.Full:
+        except queue.Full:
             self.buffer.get(block=True)
             self.buffer.put(ev, block=True)
 
@@ -193,7 +193,7 @@ class AEDATMonClient(AEDATClientBase):
         while True:
             try:
                 x.add_adtmev(self.buffer.get(block=False).get_adtmev())
-            except Queue.Empty:
+            except queue.Empty:
                 return x.get_adtmev()
 
     def listen(self, tDuration=1000, filter_duplicates=False):
@@ -214,7 +214,7 @@ class AEDATMonClient(AEDATClientBase):
         while data_delta < target_delta:
             try:
                 evs = self.buffer.get(block=True)
-            except Queue.Empty:
+            except queue.Empty:
                 continue
 
             if evs.get_nev() > 0:
@@ -311,8 +311,8 @@ class AEDATClient(AEDATMonClient):
             stimByteStream = stim.get_tmadev().tostring()
 
         if verbose:
-            print "Bytecoding input... done"
-            print np.fromstring(stimByteStream, 'uint32')
+            print("Bytecoding input... done")
+            print((np.fromstring(stimByteStream, 'uint32')))
 
         if tDuration == None:
             tDuration = np.sum(stim.get_tm()) * 1e-3  # from us to ms
@@ -323,15 +323,15 @@ class AEDATClient(AEDATMonClient):
 
         #Clean up pre-stimulus data
         if verbose:
-            print "Flushing pre-stimulus data"
+            print("Flushing pre-stimulus data")
         self.flush()
 
         if verbose:
-            print "Sending to " + self.host
+            print(("Sending to " + self.host))
 
         if len(stim)>0:
             if verbose:
-                print np.fromstring(stimByteStream, 'uint32')
+                print((np.fromstring(stimByteStream, 'uint32')))
 
             if send_reset_event:
                 self.stim_sock.send(HOLDEVENT)
@@ -347,8 +347,8 @@ class AEDATClient(AEDATMonClient):
 
         else:
             if verbose:
-                print "Waiting " + str(
-                    tDuration) + "ms " + "for stimulation to finish"
+                print(("Waiting " + str(
+                    tDuration) + "ms " + "for stimulation to finish"))
 
         #####
         # Throw away pre-stimulus data

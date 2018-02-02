@@ -50,7 +50,7 @@ class PeriodicStimulator(threading.Thread):
             try:
                 time.sleep(self.period - elapsed)
             except:
-                print self.period, elapsed
+                print((self.period, elapsed))
         print('Stimulation stopped')
         self.finished.clear()
 
@@ -69,7 +69,7 @@ class PeriodicStimulator(threading.Thread):
         if stim.t_stop > self.period * 1000.:
             print("ERROR: Stimulus is larger than the 'period', set a larger period and retry.")
             return
-        print "Multiplexing..."
+        print("Multiplexing...")
         stimEvents = self.SeqChannelAddress.exportAER(stim, isi=True)
         evs_in = stimEvents.get_tmadev()
         self.stimByteStream = evs_in.tostring()
