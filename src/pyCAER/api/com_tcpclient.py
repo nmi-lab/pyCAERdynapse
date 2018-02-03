@@ -43,7 +43,7 @@ class Communicator(ContinuousCommunicatorBase):
             self.close()
         self._client = value
 
-    def run(self, stimulus=None, duration=None, context_manager=None, **kwargs):    
+    def run(self, stimulus=None, duration=1000, context_manager=None, **kwargs):    
         self.open()
         self.stim(stimulus, duration, context_manager, **kwargs)
         self.close()
