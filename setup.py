@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(name='pyCAER',
-	version='20180201_0',
+	version='20180202_r1',
 	description='python Caer client and NCS api',
 	author='Emre Neftci',
 	author_email='eneftci@uci.edu',

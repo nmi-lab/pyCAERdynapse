@@ -8,8 +8,11 @@ import os
 import struct
 import socket
 import threading
-import queue
 import sys
+try:
+    import Queue as queue
+except ImportError:
+    import queue
 import time
 import errno
 import numpy as np

@@ -1,6 +1,9 @@
 import threading
-import queue
 import socket, struct
+try:
+    import Queue as queue
+except ImportError:
+    import queue
 #For probing network buffer
 import fcntl
 from termios import FIONREAD
@@ -91,11 +94,12 @@ class AEDATClientBase(threading.Thread):
 
         #empty Queue buffer
         with self.recvlock:
-            while True:
-                try:
-                    self.buffer.get(False)
-                except queue.Empty:
-                    break
+            self.buffer.queue.clear()
+#           while True:
+#               try:
+#                   self.buffer.get(False)
+#               except queue.Empty:
+#                   break
 
     def stop(self):
         self.finished.set()
@@ -311,8 +315,9 @@ class AEDATClient(AEDATMonClient):
             stimByteStream = stim.get_tmadev().tostring()
 
         if verbose:
-            print("Bytecoding input... done")
-            print((np.fromstring(stimByteStream, 'uint32')))
+            print("Bytecoding input...")
+            #print((np.fromstring(stimByteStream, 'uint32')))
+            print("Done")
 
         if tDuration == None:
             tDuration = np.sum(stim.get_tm()) * 1e-3  # from us to ms
@@ -323,7 +328,7 @@ class AEDATClient(AEDATMonClient):
 
         #Clean up pre-stimulus data
         if verbose:
-            print("Flushing pre-stimulus data")
+            print("Flushing pre-stimulus data...")
         self.flush()
 
         if verbose:
