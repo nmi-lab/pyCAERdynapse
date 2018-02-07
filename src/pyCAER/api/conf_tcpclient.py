@@ -66,7 +66,6 @@ class Configurator(ConfiguratorBase):
                     new_parameter.add_attr(attr.attrib['key'],attr.attrib,attr.text)
                 alld[new_parameter.SignalName] = new_parameter
         self.parameters = alld
-
     def open(self):
         '''
         Open AmdaClient
@@ -91,6 +90,14 @@ class Configurator(ConfiguratorBase):
         command = 'put {path} {key} {type} {value}'.format( path = path, key = key, type=type, value = param_value)
         self.client.send_command(command)
 
+    def set_caer_sshs(self, path, key, type, value):
+        command = 'put {path} {key} {type} {value}'.format( path = path, key = key, type=type, value = value)
+        self.client.send_command(command)
+
+    def get_caer_sshs(self, path, key, type):
+        command = 'get {path} {key} {type}'.format( path = path, key = key, type=type)
+        return self.client.send_command(command)
+
     def get_param_names(self):
         #CONVENIENCE FUNCTION. IMPLEMENTATION IS NOT REQUIRED
         '''
@@ -111,7 +118,7 @@ class Configurator(ConfiguratorBase):
             path = self.parameters[name].path
             type = self.parameters[name].attr[key].data['type']
             command = 'get {path} {key} {type}'.format( path = path, key = key, type=type)
-            value = self.client.send_command(command).strip('\x00')
+            value = self.client.send_command(command).strip('\x00'.encode())
             if key in ['coarseValue','fineValue']: value = int(value)
             self.parameters[name].attr[key].value = value
             return value
