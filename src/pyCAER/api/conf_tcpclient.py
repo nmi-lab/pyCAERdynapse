@@ -111,7 +111,7 @@ class Configurator(ConfiguratorBase):
             path = self.parameters[name].path
             type = self.parameters[name].attr[key].data['type']
             command = 'get {path} {key} {type}'.format( path = path, key = key, type=type)
-            value = self.client.send_command(command).strip('\x00')
+            value = self.client.send_command(command).strip('\x00'.encode())
             if key in ['coarseValue','fineValue']: value = int(value)
             self.parameters[name].attr[key].value = value
             return value
