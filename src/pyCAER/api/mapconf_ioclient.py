@@ -139,14 +139,14 @@ class Mappings(MappingsBase):
         if conf is None:
             raise Exception('No Dynapse Chip Found\n')
         else:
-            while conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool').strip('\x00') is "true":
-                print(onf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool'))
+            while conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool').strip('\x00'.encode()) is "true":
+                print(conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool'))
                 print("Waiting other processes to finish weight programming")
-                time.sleep(1)
+                time.sleep(.5)
             conf.set_caer_sshs("/netparser/", "net_txt_file", "string", self.filename)
             conf.set_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool', "true")
-            while conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool').strip('\x00') is "true":
+            while conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool').strip('\x00'.encode()) is "true":
                 print("Waiting weight programming to complete")
-                time.sleep(.1)
+                time.sleep(.5)
         
         

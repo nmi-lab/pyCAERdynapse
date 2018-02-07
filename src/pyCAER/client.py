@@ -133,7 +133,7 @@ class AEDATMonClient(AEDATClientBase):
         eventvalid = struct.unpack('I', data_ev_head[24:28])[0]
         next_read = eventcapacity * eventsize
         if(eventtype == 12):
-            data = ''
+            data = ''.encode()
             while len(data)<next_read:
                 data += self.sock.recv(next_read-len(data))
             return data, eventvalid
