@@ -127,9 +127,9 @@ class caerCommunicationControlServer:
                     databuffer[4:5] = struct.pack('H', node_length)  
                     databuffer[6:7] = struct.pack('H', key_length)
                     databuffer[8:9] = struct.pack('H', value_length)
-                    databuffer[10:10+node_length] = str(cmd_parts[self.cmd_part_node])
-                    databuffer[10+node_length:10+node_length+key_length] = str(cmd_parts[self.cmd_part_key])
-                    databuffer[10+node_length+key_length:10+node_length+key_length+value_length] = str(cmd_parts[self.cmd_part_value])
+                    databuffer[10:10+node_length] = str(cmd_parts[self.cmd_part_node]).encode('utf-8')
+                    databuffer[10+node_length:10+node_length+key_length] = str(cmd_parts[self.cmd_part_key]).encode('utf-8')
+                    databuffer[10+node_length+key_length:10+node_length+key_length+value_length] = str(cmd_parts[self.cmd_part_value]).encode('utf-8')
                     databuffer_length = 10 + node_length + key_length + value_length
                     #raise Exception
                 if(action_code == self.GET):
@@ -142,9 +142,9 @@ class caerCommunicationControlServer:
                     databuffer[4:5] = struct.pack('H', node_length)  
                     databuffer[6:7] = struct.pack('H', key_length)
                     databuffer[8:9] = struct.pack('H', 0)
-                    databuffer[10:10+node_length] = str(cmd_parts[self.cmd_part_node])
-                    databuffer[10+node_length:10+node_length+key_length] = str(cmd_parts[self.cmd_part_key])
-                    databuffer[10+node_length+key_length:10+node_length+key_length] = str('')
+                    databuffer[10:10+node_length] = str(cmd_parts[self.cmd_part_node]).encode('utf-8')
+                    databuffer[10+node_length:10+node_length+key_length] = str(cmd_parts[self.cmd_part_key]).encode('utf-8')
+                    databuffer[10+node_length+key_length:10+node_length+key_length] = str('').encode('utf-8')
                     databuffer_length = 10 + node_length + key_length 
                     #raise Exception
 
@@ -198,9 +198,9 @@ class caerCommunicationControlServer:
         self.s_commands.sendall(cmd)
         msg_header = self.s_commands.recv(4)
         msg_packet = self.s_commands.recv(struct.unpack('H', msg_header[2:4])[0])
-        action = struct.unpack('B',msg_header[0])[0]
-        second = struct.unpack('B',msg_header[1])[0]
-        print((string+' action='+str(action)+' type='+str(second)+' message='+msg_packet))
+        action = struct.unpack('B',msg_header[0:1])[0]
+        second = struct.unpack('B',msg_header[1:2])[0]
+        print((string+' action='+str(action)+' type='+str(second)+' message='+msg_packet.decode()))
         return msg_packet
 
     def load_biases(self, xml_file = 'cameras/davis240c.xml', dvs128xml = False):
