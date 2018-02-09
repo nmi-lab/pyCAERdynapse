@@ -65,8 +65,8 @@ class AEDATClientBase(threading.Thread):
         # Set the socket to non-blocking (with timeout) to avoid the thread
         # being stuck. Because of this, I must catch EWOULDBLOCK error
         #Frame period
-        self.fT = 5.0
-        self.sock.settimeout(self.fT)
+        self.fT = 1./50
+        self.sock.settimeout(5.0)
 
 
         #Build decoder functions
@@ -75,15 +75,15 @@ class AEDATClientBase(threading.Thread):
 
     def run(self):
         while self.finished.isSet() != True:
-            #t0 = time.time()
+            t0 = time.time()
 
             with self.recvlock:
                 self.fetch_raw()
 
-            #Fastest frame rate should be fT. Wait in case we've been faster
-            #t_left = self.fT - (time.time() - t0)
-            #if t_left > 0:
-            #    time.sleep(t_left)
+            #Fastest frame rate should be 1/fT. Wait in case we've been faster
+            t_left = self.fT - (time.time() - t0)
+            if t_left > 0:
+                time.sleep(t_left)
             # Ok now check how much data is available and choose a multiple of
             # 8 (AE packet size
 
@@ -340,8 +340,7 @@ class AEDATClient(AEDATMonClient):
 
             if send_reset_event:
                 self.stim_sock.send(HOLDEVENT)
-                self.flush(
-                    )  # Be sure that there are no events left in the buffer
+                self.flush()  # Be sure that there are no events left in the buffer
                 # Since the monitor is held, no events can come in until the
                 # reset. Well... in theory
                 #Bug: Somehow, a few event still get through...
@@ -363,10 +362,10 @@ class AEDATClient(AEDATMonClient):
         #while self.buffer.get() != -1:
         #    pass
 
-
-        if not debug:  # useful for debugging
-            return self.listen(tDuration=tDuration,
-                               filter_duplicates=filter_duplicates)
+        if verbose:
+            print("Recieving...")
+        received = self.listen(tDuration=tDuration, filter_duplicates=filter_duplicates)
+        return received
             
     def stop(self):
         self.finished.set()

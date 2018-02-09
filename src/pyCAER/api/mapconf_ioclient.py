@@ -10,12 +10,19 @@ import socket
 class Mappings(MappingsBase):
 
     @doc_inherit
-    def __init__(self, host='128.200.83.67', debug=True, *args, **kwargs):
+    def __init__(self, host='128.200.83.67', concatenated=True, local_directory='/tmp/', remote_directory='/var/opt/pyncs/', debug=True, *args, **kwargs):
         self.host = host
         self.debug = debug
         self.cur_mappings = []
-        self.local_directory = '/tmp/' 
+        self.remote_directory = remote_directory
+        self.local_directory = local_directory 
         self.filename = 'mapping_table_' + getuser()
+        self.local_filename = self.local_directory+self.filename
+        if concatenated:
+            self.remote_filename = self.remote_directory + 'mapping_table'
+        else:
+            self.remote_filename = self.remote_directory + self.filename
+        
         #self.clear_mappings()
         super(self.__class__, self).__init__()
 
@@ -44,7 +51,7 @@ class Mappings(MappingsBase):
         src_chip = nsetup.mon.extract_channels(mappings[:,0])
         dst_chip = nsetup.seq.extract_channels(mappings[:,1])
 
-        with open(self.local_directory+self.filename, 'w') as f:
+        with open(self.local_filename, 'w') as f:
             f.write('#Writing pyNCS Connections')
             for i in range(n_connections):
                 src_chip, dst_chip = nsetup.mon.extract_channels(mappings[i])
@@ -142,13 +149,14 @@ class Mappings(MappingsBase):
         else:
             ftp = ftplib.FTP(self.host, user='pyncs')
             ftp.storlines('STOR {0}'.format(self.filename),
-                    open('{0}'.format(self.local_directory+self.filename),'r'))
+                    open('{0}'.format(self.local_filename),'r'))
             ftp.close()
             while conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool').strip('\x00'.encode()) is "true":
                 print(conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool'))
                 print("Waiting other processes to finish weight programming")
                 time.sleep(.5)
-            conf.set_caer_sshs("/netparser/", "net_txt_file", "string", "/var/opt/pyncs/"+self.filename)
+            conf.set_caer_sshs("/netparser/", "net_txt_file", "string", self.remote_filename)
+            time.sleep(.3)
             conf.set_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool', "true")
             while conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool').strip('\x00'.encode()) is "true":
                 print("Waiting weight programming to complete")
