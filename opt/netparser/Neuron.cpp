@@ -138,6 +138,7 @@ string Neuron::GetCAMString() {
 }
 
 vector<SRAM_cell>::iterator Neuron::FindEquivalentSram(Neuron * post){
+  
     vector<SRAM_cell>::iterator sramPtr;
     for(sramPtr = this->SRAM.begin(); sramPtr != this->SRAM.end(); ++sramPtr){
         if(sramPtr->destinationChip == post->chip)
@@ -201,6 +202,16 @@ bool ConnectionManager::ExistsConnection(Neuron *pre, Neuron *post, uint8_t conn
         }
     } else { return false; }
   } else { return false; }
+
+}
+
+void ConnectionManager::find_connections_to_delete(){
+      diffTable.clear();
+      set_difference(
+          currentTable.begin(), currentTable.end(),
+          inputTable.begin(), inputTable.end(),
+          inserter(diffTable, diffTable.begin())
+          ); 
 
 }
 
@@ -315,12 +326,28 @@ void ConnectionManager::DeleteConnection( Synapse * syn, Neuron * post){
             "DB: " + to_string(it->destinationCores);
 
             caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
+        //T caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, pre->chip);
+
+        //T caerDynapseWriteSram(handle, pre->core, pre->neuron, pre->core, (bool)dirBits[0],
+        //T                  dirBits[1], (bool)dirBits[2], dirBits[3], (uint16_t) sramNumber, //first SRAM is for debbugging
+        //T                 it->destinationCores);
+
+            caerLog(CAER_LOG_DEBUG, __func__, "Checking whether SRAM should be deleted");
+            printf("%d \n,",it->connectedNeurons.size());
+
+            if(it->connectedNeurons.size()==0){
+              caerLog(CAER_LOG_DEBUG, __func__, "No more connected neurons. Deleting SRAM");
+              it = pre->SRAM.erase(it);
+            }  
+
+        } else {
+              caerLog(CAER_LOG_ERROR, __func__, "No valid SRAM found! Connection Table may be corrupted");
         }
+
         
         //Delete CAM
+        bool erased = false;
         for (vector<Synapse *>::iterator camPtr = post->CAM.begin(); camPtr != post->CAM.end(); ++camPtr) {
-            message =  (*camPtr)->GetLocString();
-            caerLog(CAER_LOG_NOTICE, __func__, message.c_str());
             //Existing synapse
             Synapse *exsyn = *camPtr; 
             if (*exsyn == *syn){
@@ -334,10 +361,17 @@ void ConnectionManager::DeleteConnection( Synapse * syn, Neuron * post){
 
               caerLog(CAER_LOG_NOTICE, __func__, message.c_str());
               camPtr = post->CAM.erase(camPtr);
+     //T      caerDynapseWriteCam(handle, 0, NeuronCamAddress(post->neuron,post->core),
+     //T                     (uint32_t) exsyn->camid, connection_type);
               printf("erased!\n");
+              erased = true;
               break;
             }
         }
+        if(!erased){
+              caerLog(CAER_LOG_ERROR, __func__, "No valid CAM found! Connection Table may be corrupted");
+        }
+
 }
 void ConnectionManager::MakeConnection( Neuron * pre, Neuron * post, uint8_t cam_slots_number, uint8_t connection_type ){
     bool program_sram = true;
@@ -650,14 +684,13 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
 	// Creates a static vector to hold current connections
 	static vector< vector<int> > connectionTable;
 	static vector< vector<int> > bufferTable;
-	vector<uint8_t> currentConnection; // [preU,preC,preN, postU,post,C,postN, CAM, synType]
 //CURRENT////////////////////////////////////////////////////////////////////////////////////////////////////CURRENT//
 
 	// If no current connections (ClearCAM was previously called, initialize currentConnections with incoming user input from .txt)
-	if (connectionTable.empty() == true) {
+	//if (connectionTable.empty() == true) {
 	// fill with incoming connections (currently buffered via bufferTable)
 		connectionTable = bufferTable;
-	}
+	//}
 
     caerLog(CAER_LOG_DEBUG, __func__, ("attempting to read net found at: " + filepath).c_str());
     ifstream netFile (filepath);
@@ -687,26 +720,54 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
                         cv.push_back((unsigned char &&) stoi(connection.substr(prev, string::npos)));
                     if (cv[4]>1){
                       caerLog(CAER_LOG_ERROR, __func__, "cams_slot_number>1 is forbidden: ");
-                      return false;
+                      cv[4]=1;
+
                     }
 
                     //manager->ExistsConnection(new Neuron(cv[0],cv[1],cv[2]),new Neuron(cv[5],cv[6],cv[7]),cv[3])
                     Neuron * ppre = new Neuron(cv[0],cv[1],cv[2]);
                     Neuron * ppost = new Neuron(cv[5],cv[6],cv[7]);
                     
+                    vector<int> currentConnection;
                     for (int i=0; i<cv.size(); i++) {
-                      currentConnection.push_back(cv[i]);
+                      currentConnection.push_back(static_cast<int>(cv[i]));
                     }
-                    //bufferTable.push_back(currentConnection);
+                    manager->inputTable.push_back(currentConnection);
+
+                    //Add non-existing connections
                     if(!manager->ExistsConnection(ppre,ppost,3)){ 
-
-
                     manager->Connect(ppre,ppost,cv[4],cv[3]);
                     cv.clear();
-                    currentConnection.clear();
                     } else {
                       caerLog(CAER_LOG_NOTICE, __func__, "Connection Already Exists");
                     }
+
+                    //Delete connections not in inputTable
+                    manager->find_connections_to_delete();
+
+                    //for(auto cv: manager->diffTable){
+
+                    for(auto icv = manager->diffTable.begin();
+                        icv != manager->diffTable.end();
+                        ++icv){
+
+                    string message = "CV VALUE IS THIS: "; 
+                    printf("%d %d %d %d \n",(*icv)[0],(*icv)[1],(*icv)[2],(*icv)[3]);
+                    printf("%d %d %d\n",(*icv)[5],(*icv)[6],(*icv)[7]);
+                    caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
+
+                    Neuron * ppre = new Neuron((*icv)[0],(*icv)[1],(*icv)[2]);
+                    Neuron * ppost = new Neuron((*icv)[5],(*icv)[6],(*icv)[7]);
+                    if(manager->ExistsConnection(ppre,ppost,3)){ 
+                      printf("exists!");
+                      Neuron* pre = manager->GetNeuron(ppre);
+                      Synapse* syn = new Synapse(pre, (*icv)[3]);
+                      Neuron* post = manager->GetNeuron(ppost);
+                      manager->DeleteConnection(syn, post);
+                    }
+                    }
+
+
 
                 } else{
                     // Print comments in network file that start with #! for debbuging
@@ -717,6 +778,8 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
             }
         }
         netFile.close();
+        manager->currentTable = manager->inputTable;
+        manager->inputTable.clear();
         return true;        
 
     }
@@ -724,6 +787,7 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
         caerLog(CAER_LOG_ERROR, __func__, ("unable to open file: " + filepath).c_str());  
         return false;
     } 
+
 
 }
 

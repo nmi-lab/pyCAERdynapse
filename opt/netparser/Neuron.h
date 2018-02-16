@@ -93,7 +93,7 @@ struct SRAM_cell{
     SRAM_cell(Neuron* n);
     SRAM_cell();
 
-    const uint8_t destinationChip;
+    uint8_t destinationChip;
     uint8_t destinationCores;
     vector<Neuron *> connectedNeurons;
 };
@@ -133,13 +133,20 @@ private:
     // Appends connection to software SRAM and CAM and calls caerDynapseWriteSram and caerDynapseWriteCam
     void MakeConnection(Neuron *pre, Neuron *post, uint8_t syn_strength, uint8_t connection_type);
 
+
 public:
     ConnectionManager(caerDeviceHandle h, sshsNode n);
     void DeleteConnection(Synapse * syn, Neuron * post);
 
+    void find_connections_to_delete();
+
     bool ExistsConnection(Neuron *pre, Neuron *post, uint8_t connection_type);
     
     void Clear();
+
+    vector<vector<int> > currentTable;
+    vector<vector<int> > inputTable;
+    vector<vector<int> > diffTable;
 
     map<Neuron, Neuron *> *GetNeuronMap();
     vector<Neuron*> FilterNeuronMap(uint8_t chip_n, uint8_t core_n);
