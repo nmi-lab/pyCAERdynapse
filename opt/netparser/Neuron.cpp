@@ -2,11 +2,6 @@
 // Created by rodrigo on 5/30/17.
 //
 
-
-//
-// Created by rodrigo on 5/30/17.
-//
-
 #include "Neuron.h"
 
 using namespace std;
@@ -103,7 +98,7 @@ void Neuron::PrintSRAM() {
 
 
 // This function returns a string containing the address of every destination neuron present in the SRAM of the specified neuron
-// THe string is like U00C00N001 U00C00N002 etc.
+// The string is like U00C00N001 U00C00N002 etc.
 string Neuron::GetSRAMString() {
     stringstream ss;
 
@@ -272,7 +267,6 @@ uint32_t ConnectionManager::NeuronCamAddress(int neuron, int core){
     return (uint32_t) neuron + core*256;
 }
 
-
 // The Connection manager keeps track of the SRAM and CAM registers of all neurons
 // involved in a connection (sparse). Since there is no real way to access the
 // registers themselves in order for this to work you must piping all connection settings through
@@ -362,6 +356,7 @@ void ConnectionManager::MakeConnection( Neuron * pre, Neuron * post, uint8_t cam
         // Find Sram whose destination chip is the same as post neuron   
         it = pre->FindEquivalentSram(post);
         if(it != pre->SRAM.end()){ // Found -> update SRAM
+            caerLog(CAER_LOG_DEBUG, __func__, "Similar connection");
             it->connectedNeurons.push_back(post);
 
             // update Destination core bits (OR between the current one and the post core ones)
@@ -545,7 +540,6 @@ void ConnectionManager::Clear(){
 stringstream ConnectionManager::GetNeuronMapString(){
     stringstream ss;
     
-    
     for(auto it = neuronMap_.cbegin(); it != neuronMap_.cend(); ++it)
     {
         Neuron * entry = it->second; 
@@ -652,6 +646,19 @@ void ConnectionManager::SetTau2(uint8_t chip_n ,uint8_t core_n, uint8_t neuron_n
 
 bool ReadNetTXT (ConnectionManager * manager, string filepath) {
 
+//CURRENT////////////////////////////////////////////////////////////////////////////////////////////////////CURRENT//
+	// Creates a static vector to hold current connections
+	static vector< vector<int> > connectionTable;
+	static vector< vector<int> > bufferTable;
+	vector<uint8_t> currentConnection; // [preU,preC,preN, postU,post,C,postN, CAM, synType]
+//CURRENT////////////////////////////////////////////////////////////////////////////////////////////////////CURRENT//
+
+	// If no current connections (ClearCAM was previously called, initialize currentConnections with incoming user input from .txt)
+	if (connectionTable.empty() == true) {
+	// fill with incoming connections (currently buffered via bufferTable)
+		connectionTable = bufferTable;
+	}
+
     caerLog(CAER_LOG_DEBUG, __func__, ("attempting to read net found at: " + filepath).c_str());
     ifstream netFile (filepath);
     string connection;
@@ -682,12 +689,21 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
                       caerLog(CAER_LOG_ERROR, __func__, "cams_slot_number>1 is forbidden: ");
                       return false;
                     }
+
                     //manager->ExistsConnection(new Neuron(cv[0],cv[1],cv[2]),new Neuron(cv[5],cv[6],cv[7]),cv[3])
                     Neuron * ppre = new Neuron(cv[0],cv[1],cv[2]);
                     Neuron * ppost = new Neuron(cv[5],cv[6],cv[7]);
+                    
+                    for (int i=0; i<cv.size(); i++) {
+                      currentConnection.push_back(cv[i]);
+                    }
+                    //bufferTable.push_back(currentConnection);
                     if(!manager->ExistsConnection(ppre,ppost,3)){ 
+
+
                     manager->Connect(ppre,ppost,cv[4],cv[3]);
                     cv.clear();
+                    currentConnection.clear();
                     } else {
                       caerLog(CAER_LOG_NOTICE, __func__, "Connection Already Exists");
                     }
