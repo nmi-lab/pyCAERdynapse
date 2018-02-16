@@ -733,39 +733,17 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
                       currentConnection.push_back(static_cast<int>(cv[i]));
                     }
                     manager->inputTable.push_back(currentConnection);
+                    currentConnection.clear();
 
                     //Add non-existing connections
-                    if(!manager->ExistsConnection(ppre,ppost,3)){ 
+                    if(!manager->ExistsConnection(ppre,ppost,cv[3])){ 
                     manager->Connect(ppre,ppost,cv[4],cv[3]);
-                    cv.clear();
                     } else {
                       caerLog(CAER_LOG_NOTICE, __func__, "Connection Already Exists");
                     }
+                    cv.clear();
 
                     //Delete connections not in inputTable
-                    manager->find_connections_to_delete();
-
-                    //for(auto cv: manager->diffTable){
-
-                    for(auto icv = manager->diffTable.begin();
-                        icv != manager->diffTable.end();
-                        ++icv){
-
-                    string message = "CV VALUE IS THIS: "; 
-                    printf("%d %d %d %d \n",(*icv)[0],(*icv)[1],(*icv)[2],(*icv)[3]);
-                    printf("%d %d %d\n",(*icv)[5],(*icv)[6],(*icv)[7]);
-                    caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
-
-                    Neuron * ppre = new Neuron((*icv)[0],(*icv)[1],(*icv)[2]);
-                    Neuron * ppost = new Neuron((*icv)[5],(*icv)[6],(*icv)[7]);
-                    if(manager->ExistsConnection(ppre,ppost,3)){ 
-                      printf("exists!");
-                      Neuron* pre = manager->GetNeuron(ppre);
-                      Synapse* syn = new Synapse(pre, (*icv)[3]);
-                      Neuron* post = manager->GetNeuron(ppost);
-                      manager->DeleteConnection(syn, post);
-                    }
-                    }
 
 
 
@@ -778,8 +756,36 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
             }
         }
         netFile.close();
+
+        printf("Number of differences %d %d %d\n", manager->diffTable.size(), manager->inputTable.size(), manager->currentTable.size());
+        manager->find_connections_to_delete();
+
+        printf("Number of differences %d\n", manager->diffTable.size());
+        for(auto icv = manager->diffTable.begin();
+            icv != manager->diffTable.end();
+            ++icv){
+
+        string message = "CV VALUE IS THIS: "; 
+        caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
+        printf("%d %d %d %d \n",(*icv)[0],(*icv)[1],(*icv)[2],(*icv)[3]);
+        printf("%d %d %d\n",(*icv)[5],(*icv)[6],(*icv)[7]);
+
+        Neuron * ppre = new Neuron((*icv)[0],(*icv)[1],(*icv)[2]);
+        Neuron * ppost = new Neuron((*icv)[5],(*icv)[6],(*icv)[7]);
+        if(manager->ExistsConnection(ppre,ppost,(*icv)[3])){ 
+          printf("exists!");
+          Neuron* pre = manager->GetNeuron(ppre);
+          Synapse* syn = new Synapse(pre, (*icv)[3]);
+          Neuron* post = manager->GetNeuron(ppost);
+          manager->DeleteConnection(syn, post);
+        }
+        if(manager->ExistsConnection(ppre,ppost, (*icv)[3])){
+          printf("Connection still exists!\n");
+        }
+        }
         manager->currentTable = manager->inputTable;
         manager->inputTable.clear();
+        manager->diffTable.clear();
         return true;        
 
     }

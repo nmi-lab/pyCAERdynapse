@@ -5,7 +5,6 @@ int main()
   std::cout << "Hello World!" << std::endl;
   ConnectionManager * manager = new ConnectionManager(0, 0);
   manager->PrintNeuronMap();
-  ReadNetTXT(manager, "networks/hellonet2.txt");
 
 //  manager->PrintNeuronMap();
 //  Neuron* ppre  = new Neuron(0, 0, 3);
@@ -21,9 +20,12 @@ int main()
 //  }
 
 
-  ReadNetTXT(manager, "networks/hellonet.txt");
-  ReadNetTXT(manager, "networks/hellonet.txt");
-  ReadNetTXT(manager, "networks/hellonet2.txt");
+  ReadNetTXT(manager, "networks/mapping_table");
+  manager->PrintNeuronMap();
+  ReadNetTXT(manager, "networks/mapping_table_half");
+  manager->PrintNeuronMap();
+  ReadNetTXT(manager, "networks/mapping_table");
+  manager->PrintNeuronMap();
 
 //  if(manager->ExistsConnection(ppre, ppost, 3)){ 
 //    Neuron* pre = manager->GetNeuron(ppre);
@@ -33,6 +35,5 @@ int main()
 //    manager->DeleteConnection(syn, post);
 //  }
 
-  manager->PrintNeuronMap();
   return 0;
 }
