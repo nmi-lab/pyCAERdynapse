@@ -1,0 +1,50 @@
+#! Cam not overflow (now full)
+U01-C00-N001->3-32-U00-C00-N001
+U01-C00-N002->3-32-U00-C00-N001
+
+#! Cam overflow
+U01-C00-N003->3-1-U00-C00-N001
+
+#! SRAM Filling
+# Fill all the SRAM connecting the neuron to three different chips
+U01-C00-N004->3-1-U00-C00-N005
+U01-C00-N004->3-1-U02-C00-N005
+U01-C00-N004->3-1-U03-C00-N005
+
+#! SRAM overflow
+# Create overflow trying to connect the same neuron to another chip
+U01-C00-N004->3-1-U01-C00-N005
+
+#! SRAM filling 2
+# Fill all the SRAM connecting the neuron to three different chips
+U01-C00-N005->3-1-U00-C00-N006
+U01-C00-N005->3-1-U02-C00-N006
+U01-C00-N005->3-1-U03-C00-N006
+
+#! SRAM not overflow
+# Everything i connect in the same chips connected before does not create overflow
+# ...every SRAM is adapted to the new routings. In this example it is exploited multi-core routing
+# because the destination neurons are in different cores. In case the destination neuron is 
+# in the same core, only CAM is written
+U01-C00-N005->3-1-U00-C01-N006
+U01-C00-N005->3-1-U00-C02-N006
+U01-C00-N005->3-1-U00-C03-N006
+U01-C00-N005->3-1-U02-C01-N006
+U01-C00-N005->3-1-U02-C02-N006
+U01-C00-N005->3-1-U02-C03-N006
+U01-C00-N005->3-1-U03-C01-N006
+U01-C00-N005->3-1-U03-C02-N006
+U01-C00-N005->3-1-U03-C03-N006
+
+#! CAM No clash
+# Neurons (with same address) of different chips connected to the same chip, but different cores
+U01-C00-N006->3-1-U00-C00-N007
+U02-C00-N006->3-1-U00-C01-N007
+
+#! CAM clash
+# Neurons (with same address) of different chips connected to the same chip, same core, same neuron
+U02-C00-N006->3-1-U00-C00-N007
+
+#! CAM clash 2
+# Neurons (with same address) of different chips connected to the same chip, same core, different neurons
+U02-C00-N006->3-1-U00-C00-N008

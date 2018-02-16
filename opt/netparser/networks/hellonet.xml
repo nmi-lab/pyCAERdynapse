@@ -1,0 +1,3075 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CONNECTIONS>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="0"/>
+    <POST CHIP="0" CORE="0" NEURON="0"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="1"/>
+    <POST CHIP="0" CORE="0" NEURON="1"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="2"/>
+    <POST CHIP="0" CORE="0" NEURON="2"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="3"/>
+    <POST CHIP="0" CORE="0" NEURON="3"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="4"/>
+    <POST CHIP="0" CORE="0" NEURON="4"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="5"/>
+    <POST CHIP="0" CORE="0" NEURON="5"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="6"/>
+    <POST CHIP="0" CORE="0" NEURON="6"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="7"/>
+    <POST CHIP="0" CORE="0" NEURON="7"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="8"/>
+    <POST CHIP="0" CORE="0" NEURON="8"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="9"/>
+    <POST CHIP="0" CORE="0" NEURON="9"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="10"/>
+    <POST CHIP="0" CORE="0" NEURON="10"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="11"/>
+    <POST CHIP="0" CORE="0" NEURON="11"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="12"/>
+    <POST CHIP="0" CORE="0" NEURON="12"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="13"/>
+    <POST CHIP="0" CORE="0" NEURON="13"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="14"/>
+    <POST CHIP="0" CORE="0" NEURON="14"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="15"/>
+    <POST CHIP="0" CORE="0" NEURON="15"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="16"/>
+    <POST CHIP="0" CORE="0" NEURON="16"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="17"/>
+    <POST CHIP="0" CORE="0" NEURON="17"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="18"/>
+    <POST CHIP="0" CORE="0" NEURON="18"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="19"/>
+    <POST CHIP="0" CORE="0" NEURON="19"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="20"/>
+    <POST CHIP="0" CORE="0" NEURON="20"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="21"/>
+    <POST CHIP="0" CORE="0" NEURON="21"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="22"/>
+    <POST CHIP="0" CORE="0" NEURON="22"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="23"/>
+    <POST CHIP="0" CORE="0" NEURON="23"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="24"/>
+    <POST CHIP="0" CORE="0" NEURON="24"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="25"/>
+    <POST CHIP="0" CORE="0" NEURON="25"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="26"/>
+    <POST CHIP="0" CORE="0" NEURON="26"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="27"/>
+    <POST CHIP="0" CORE="0" NEURON="27"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="28"/>
+    <POST CHIP="0" CORE="0" NEURON="28"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="29"/>
+    <POST CHIP="0" CORE="0" NEURON="29"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="30"/>
+    <POST CHIP="0" CORE="0" NEURON="30"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="31"/>
+    <POST CHIP="0" CORE="0" NEURON="31"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="32"/>
+    <POST CHIP="0" CORE="0" NEURON="32"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="33"/>
+    <POST CHIP="0" CORE="0" NEURON="33"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="34"/>
+    <POST CHIP="0" CORE="0" NEURON="34"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="35"/>
+    <POST CHIP="0" CORE="0" NEURON="35"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="36"/>
+    <POST CHIP="0" CORE="0" NEURON="36"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="37"/>
+    <POST CHIP="0" CORE="0" NEURON="37"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="38"/>
+    <POST CHIP="0" CORE="0" NEURON="38"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="39"/>
+    <POST CHIP="0" CORE="0" NEURON="39"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="40"/>
+    <POST CHIP="0" CORE="0" NEURON="40"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="41"/>
+    <POST CHIP="0" CORE="0" NEURON="41"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="42"/>
+    <POST CHIP="0" CORE="0" NEURON="42"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="43"/>
+    <POST CHIP="0" CORE="0" NEURON="43"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="44"/>
+    <POST CHIP="0" CORE="0" NEURON="44"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="45"/>
+    <POST CHIP="0" CORE="0" NEURON="45"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="46"/>
+    <POST CHIP="0" CORE="0" NEURON="46"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="47"/>
+    <POST CHIP="0" CORE="0" NEURON="47"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="48"/>
+    <POST CHIP="0" CORE="0" NEURON="48"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="49"/>
+    <POST CHIP="0" CORE="0" NEURON="49"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="50"/>
+    <POST CHIP="0" CORE="0" NEURON="50"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="51"/>
+    <POST CHIP="0" CORE="0" NEURON="51"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="52"/>
+    <POST CHIP="0" CORE="0" NEURON="52"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="53"/>
+    <POST CHIP="0" CORE="0" NEURON="53"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="54"/>
+    <POST CHIP="0" CORE="0" NEURON="54"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="55"/>
+    <POST CHIP="0" CORE="0" NEURON="55"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="56"/>
+    <POST CHIP="0" CORE="0" NEURON="56"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="57"/>
+    <POST CHIP="0" CORE="0" NEURON="57"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="58"/>
+    <POST CHIP="0" CORE="0" NEURON="58"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="59"/>
+    <POST CHIP="0" CORE="0" NEURON="59"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="60"/>
+    <POST CHIP="0" CORE="0" NEURON="60"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="61"/>
+    <POST CHIP="0" CORE="0" NEURON="61"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="62"/>
+    <POST CHIP="0" CORE="0" NEURON="62"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="63"/>
+    <POST CHIP="0" CORE="0" NEURON="63"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="64"/>
+    <POST CHIP="0" CORE="0" NEURON="64"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="65"/>
+    <POST CHIP="0" CORE="0" NEURON="65"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="66"/>
+    <POST CHIP="0" CORE="0" NEURON="66"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="67"/>
+    <POST CHIP="0" CORE="0" NEURON="67"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="68"/>
+    <POST CHIP="0" CORE="0" NEURON="68"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="69"/>
+    <POST CHIP="0" CORE="0" NEURON="69"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="70"/>
+    <POST CHIP="0" CORE="0" NEURON="70"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="71"/>
+    <POST CHIP="0" CORE="0" NEURON="71"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="72"/>
+    <POST CHIP="0" CORE="0" NEURON="72"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="73"/>
+    <POST CHIP="0" CORE="0" NEURON="73"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="74"/>
+    <POST CHIP="0" CORE="0" NEURON="74"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="75"/>
+    <POST CHIP="0" CORE="0" NEURON="75"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="76"/>
+    <POST CHIP="0" CORE="0" NEURON="76"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="77"/>
+    <POST CHIP="0" CORE="0" NEURON="77"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="78"/>
+    <POST CHIP="0" CORE="0" NEURON="78"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="79"/>
+    <POST CHIP="0" CORE="0" NEURON="79"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="80"/>
+    <POST CHIP="0" CORE="0" NEURON="80"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="81"/>
+    <POST CHIP="0" CORE="0" NEURON="81"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="82"/>
+    <POST CHIP="0" CORE="0" NEURON="82"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="83"/>
+    <POST CHIP="0" CORE="0" NEURON="83"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="84"/>
+    <POST CHIP="0" CORE="0" NEURON="84"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="85"/>
+    <POST CHIP="0" CORE="0" NEURON="85"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="86"/>
+    <POST CHIP="0" CORE="0" NEURON="86"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="87"/>
+    <POST CHIP="0" CORE="0" NEURON="87"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="88"/>
+    <POST CHIP="0" CORE="0" NEURON="88"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="89"/>
+    <POST CHIP="0" CORE="0" NEURON="89"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="90"/>
+    <POST CHIP="0" CORE="0" NEURON="90"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="91"/>
+    <POST CHIP="0" CORE="0" NEURON="91"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="92"/>
+    <POST CHIP="0" CORE="0" NEURON="92"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="93"/>
+    <POST CHIP="0" CORE="0" NEURON="93"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="94"/>
+    <POST CHIP="0" CORE="0" NEURON="94"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="95"/>
+    <POST CHIP="0" CORE="0" NEURON="95"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="96"/>
+    <POST CHIP="0" CORE="0" NEURON="96"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="97"/>
+    <POST CHIP="0" CORE="0" NEURON="97"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="98"/>
+    <POST CHIP="0" CORE="0" NEURON="98"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="99"/>
+    <POST CHIP="0" CORE="0" NEURON="99"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="100"/>
+    <POST CHIP="0" CORE="0" NEURON="100"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="101"/>
+    <POST CHIP="0" CORE="0" NEURON="101"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="102"/>
+    <POST CHIP="0" CORE="0" NEURON="102"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="103"/>
+    <POST CHIP="0" CORE="0" NEURON="103"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="104"/>
+    <POST CHIP="0" CORE="0" NEURON="104"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="105"/>
+    <POST CHIP="0" CORE="0" NEURON="105"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="106"/>
+    <POST CHIP="0" CORE="0" NEURON="106"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="107"/>
+    <POST CHIP="0" CORE="0" NEURON="107"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="108"/>
+    <POST CHIP="0" CORE="0" NEURON="108"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="109"/>
+    <POST CHIP="0" CORE="0" NEURON="109"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="110"/>
+    <POST CHIP="0" CORE="0" NEURON="110"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="111"/>
+    <POST CHIP="0" CORE="0" NEURON="111"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="112"/>
+    <POST CHIP="0" CORE="0" NEURON="112"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="113"/>
+    <POST CHIP="0" CORE="0" NEURON="113"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="114"/>
+    <POST CHIP="0" CORE="0" NEURON="114"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="115"/>
+    <POST CHIP="0" CORE="0" NEURON="115"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="116"/>
+    <POST CHIP="0" CORE="0" NEURON="116"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="117"/>
+    <POST CHIP="0" CORE="0" NEURON="117"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="118"/>
+    <POST CHIP="0" CORE="0" NEURON="118"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="119"/>
+    <POST CHIP="0" CORE="0" NEURON="119"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="120"/>
+    <POST CHIP="0" CORE="0" NEURON="120"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="121"/>
+    <POST CHIP="0" CORE="0" NEURON="121"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="122"/>
+    <POST CHIP="0" CORE="0" NEURON="122"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="123"/>
+    <POST CHIP="0" CORE="0" NEURON="123"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="124"/>
+    <POST CHIP="0" CORE="0" NEURON="124"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="125"/>
+    <POST CHIP="0" CORE="0" NEURON="125"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="126"/>
+    <POST CHIP="0" CORE="0" NEURON="126"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="127"/>
+    <POST CHIP="0" CORE="0" NEURON="127"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="128"/>
+    <POST CHIP="0" CORE="0" NEURON="128"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="129"/>
+    <POST CHIP="0" CORE="0" NEURON="129"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="130"/>
+    <POST CHIP="0" CORE="0" NEURON="130"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="131"/>
+    <POST CHIP="0" CORE="0" NEURON="131"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="132"/>
+    <POST CHIP="0" CORE="0" NEURON="132"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="133"/>
+    <POST CHIP="0" CORE="0" NEURON="133"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="134"/>
+    <POST CHIP="0" CORE="0" NEURON="134"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="135"/>
+    <POST CHIP="0" CORE="0" NEURON="135"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="136"/>
+    <POST CHIP="0" CORE="0" NEURON="136"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="137"/>
+    <POST CHIP="0" CORE="0" NEURON="137"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="138"/>
+    <POST CHIP="0" CORE="0" NEURON="138"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="139"/>
+    <POST CHIP="0" CORE="0" NEURON="139"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="140"/>
+    <POST CHIP="0" CORE="0" NEURON="140"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="141"/>
+    <POST CHIP="0" CORE="0" NEURON="141"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="142"/>
+    <POST CHIP="0" CORE="0" NEURON="142"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="143"/>
+    <POST CHIP="0" CORE="0" NEURON="143"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="144"/>
+    <POST CHIP="0" CORE="0" NEURON="144"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="145"/>
+    <POST CHIP="0" CORE="0" NEURON="145"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="146"/>
+    <POST CHIP="0" CORE="0" NEURON="146"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="147"/>
+    <POST CHIP="0" CORE="0" NEURON="147"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="148"/>
+    <POST CHIP="0" CORE="0" NEURON="148"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="149"/>
+    <POST CHIP="0" CORE="0" NEURON="149"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="150"/>
+    <POST CHIP="0" CORE="0" NEURON="150"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="151"/>
+    <POST CHIP="0" CORE="0" NEURON="151"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="152"/>
+    <POST CHIP="0" CORE="0" NEURON="152"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="153"/>
+    <POST CHIP="0" CORE="0" NEURON="153"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="154"/>
+    <POST CHIP="0" CORE="0" NEURON="154"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="155"/>
+    <POST CHIP="0" CORE="0" NEURON="155"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="156"/>
+    <POST CHIP="0" CORE="0" NEURON="156"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="157"/>
+    <POST CHIP="0" CORE="0" NEURON="157"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="158"/>
+    <POST CHIP="0" CORE="0" NEURON="158"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="159"/>
+    <POST CHIP="0" CORE="0" NEURON="159"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="160"/>
+    <POST CHIP="0" CORE="0" NEURON="160"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="161"/>
+    <POST CHIP="0" CORE="0" NEURON="161"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="162"/>
+    <POST CHIP="0" CORE="0" NEURON="162"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="163"/>
+    <POST CHIP="0" CORE="0" NEURON="163"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="164"/>
+    <POST CHIP="0" CORE="0" NEURON="164"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="165"/>
+    <POST CHIP="0" CORE="0" NEURON="165"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="166"/>
+    <POST CHIP="0" CORE="0" NEURON="166"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="167"/>
+    <POST CHIP="0" CORE="0" NEURON="167"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="168"/>
+    <POST CHIP="0" CORE="0" NEURON="168"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="169"/>
+    <POST CHIP="0" CORE="0" NEURON="169"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="170"/>
+    <POST CHIP="0" CORE="0" NEURON="170"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="171"/>
+    <POST CHIP="0" CORE="0" NEURON="171"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="172"/>
+    <POST CHIP="0" CORE="0" NEURON="172"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="173"/>
+    <POST CHIP="0" CORE="0" NEURON="173"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="174"/>
+    <POST CHIP="0" CORE="0" NEURON="174"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="175"/>
+    <POST CHIP="0" CORE="0" NEURON="175"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="176"/>
+    <POST CHIP="0" CORE="0" NEURON="176"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="177"/>
+    <POST CHIP="0" CORE="0" NEURON="177"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="178"/>
+    <POST CHIP="0" CORE="0" NEURON="178"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="179"/>
+    <POST CHIP="0" CORE="0" NEURON="179"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="180"/>
+    <POST CHIP="0" CORE="0" NEURON="180"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="181"/>
+    <POST CHIP="0" CORE="0" NEURON="181"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="182"/>
+    <POST CHIP="0" CORE="0" NEURON="182"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="183"/>
+    <POST CHIP="0" CORE="0" NEURON="183"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="184"/>
+    <POST CHIP="0" CORE="0" NEURON="184"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="185"/>
+    <POST CHIP="0" CORE="0" NEURON="185"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="186"/>
+    <POST CHIP="0" CORE="0" NEURON="186"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="187"/>
+    <POST CHIP="0" CORE="0" NEURON="187"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="188"/>
+    <POST CHIP="0" CORE="0" NEURON="188"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="189"/>
+    <POST CHIP="0" CORE="0" NEURON="189"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="190"/>
+    <POST CHIP="0" CORE="0" NEURON="190"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="191"/>
+    <POST CHIP="0" CORE="0" NEURON="191"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="192"/>
+    <POST CHIP="0" CORE="0" NEURON="192"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="193"/>
+    <POST CHIP="0" CORE="0" NEURON="193"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="194"/>
+    <POST CHIP="0" CORE="0" NEURON="194"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="195"/>
+    <POST CHIP="0" CORE="0" NEURON="195"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="196"/>
+    <POST CHIP="0" CORE="0" NEURON="196"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="197"/>
+    <POST CHIP="0" CORE="0" NEURON="197"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="198"/>
+    <POST CHIP="0" CORE="0" NEURON="198"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="199"/>
+    <POST CHIP="0" CORE="0" NEURON="199"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="200"/>
+    <POST CHIP="0" CORE="0" NEURON="200"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="201"/>
+    <POST CHIP="0" CORE="0" NEURON="201"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="202"/>
+    <POST CHIP="0" CORE="0" NEURON="202"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="203"/>
+    <POST CHIP="0" CORE="0" NEURON="203"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="204"/>
+    <POST CHIP="0" CORE="0" NEURON="204"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="205"/>
+    <POST CHIP="0" CORE="0" NEURON="205"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="206"/>
+    <POST CHIP="0" CORE="0" NEURON="206"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="207"/>
+    <POST CHIP="0" CORE="0" NEURON="207"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="208"/>
+    <POST CHIP="0" CORE="0" NEURON="208"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="209"/>
+    <POST CHIP="0" CORE="0" NEURON="209"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="210"/>
+    <POST CHIP="0" CORE="0" NEURON="210"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="211"/>
+    <POST CHIP="0" CORE="0" NEURON="211"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="212"/>
+    <POST CHIP="0" CORE="0" NEURON="212"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="213"/>
+    <POST CHIP="0" CORE="0" NEURON="213"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="214"/>
+    <POST CHIP="0" CORE="0" NEURON="214"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="215"/>
+    <POST CHIP="0" CORE="0" NEURON="215"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="216"/>
+    <POST CHIP="0" CORE="0" NEURON="216"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="217"/>
+    <POST CHIP="0" CORE="0" NEURON="217"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="218"/>
+    <POST CHIP="0" CORE="0" NEURON="218"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="219"/>
+    <POST CHIP="0" CORE="0" NEURON="219"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="220"/>
+    <POST CHIP="0" CORE="0" NEURON="220"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="221"/>
+    <POST CHIP="0" CORE="0" NEURON="221"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="222"/>
+    <POST CHIP="0" CORE="0" NEURON="222"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="223"/>
+    <POST CHIP="0" CORE="0" NEURON="223"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="224"/>
+    <POST CHIP="0" CORE="0" NEURON="224"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="225"/>
+    <POST CHIP="0" CORE="0" NEURON="225"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="226"/>
+    <POST CHIP="0" CORE="0" NEURON="226"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="227"/>
+    <POST CHIP="0" CORE="0" NEURON="227"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="228"/>
+    <POST CHIP="0" CORE="0" NEURON="228"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="229"/>
+    <POST CHIP="0" CORE="0" NEURON="229"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="230"/>
+    <POST CHIP="0" CORE="0" NEURON="230"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="231"/>
+    <POST CHIP="0" CORE="0" NEURON="231"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="232"/>
+    <POST CHIP="0" CORE="0" NEURON="232"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="233"/>
+    <POST CHIP="0" CORE="0" NEURON="233"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="234"/>
+    <POST CHIP="0" CORE="0" NEURON="234"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="235"/>
+    <POST CHIP="0" CORE="0" NEURON="235"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="236"/>
+    <POST CHIP="0" CORE="0" NEURON="236"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="237"/>
+    <POST CHIP="0" CORE="0" NEURON="237"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="238"/>
+    <POST CHIP="0" CORE="0" NEURON="238"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="239"/>
+    <POST CHIP="0" CORE="0" NEURON="239"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="240"/>
+    <POST CHIP="0" CORE="0" NEURON="240"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="241"/>
+    <POST CHIP="0" CORE="0" NEURON="241"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="242"/>
+    <POST CHIP="0" CORE="0" NEURON="242"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="243"/>
+    <POST CHIP="0" CORE="0" NEURON="243"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="244"/>
+    <POST CHIP="0" CORE="0" NEURON="244"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="245"/>
+    <POST CHIP="0" CORE="0" NEURON="245"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="246"/>
+    <POST CHIP="0" CORE="0" NEURON="246"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="247"/>
+    <POST CHIP="0" CORE="0" NEURON="247"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="248"/>
+    <POST CHIP="0" CORE="0" NEURON="248"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="249"/>
+    <POST CHIP="0" CORE="0" NEURON="249"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="250"/>
+    <POST CHIP="0" CORE="0" NEURON="250"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="251"/>
+    <POST CHIP="0" CORE="0" NEURON="251"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="252"/>
+    <POST CHIP="0" CORE="0" NEURON="252"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="253"/>
+    <POST CHIP="0" CORE="0" NEURON="253"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="254"/>
+    <POST CHIP="0" CORE="0" NEURON="254"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="1">
+    <PRE CHIP="1" CORE="1" NEURON="255"/>
+    <POST CHIP="0" CORE="0" NEURON="255"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="0"/>
+    <POST CHIP="0" CORE="0" NEURON="0"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="1"/>
+    <POST CHIP="0" CORE="0" NEURON="1"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="2"/>
+    <POST CHIP="0" CORE="0" NEURON="2"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="3"/>
+    <POST CHIP="0" CORE="0" NEURON="3"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="4"/>
+    <POST CHIP="0" CORE="0" NEURON="4"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="5"/>
+    <POST CHIP="0" CORE="0" NEURON="5"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="6"/>
+    <POST CHIP="0" CORE="0" NEURON="6"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="7"/>
+    <POST CHIP="0" CORE="0" NEURON="7"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="8"/>
+    <POST CHIP="0" CORE="0" NEURON="8"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="9"/>
+    <POST CHIP="0" CORE="0" NEURON="9"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="10"/>
+    <POST CHIP="0" CORE="0" NEURON="10"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="11"/>
+    <POST CHIP="0" CORE="0" NEURON="11"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="12"/>
+    <POST CHIP="0" CORE="0" NEURON="12"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="13"/>
+    <POST CHIP="0" CORE="0" NEURON="13"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="14"/>
+    <POST CHIP="0" CORE="0" NEURON="14"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="15"/>
+    <POST CHIP="0" CORE="0" NEURON="15"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="16"/>
+    <POST CHIP="0" CORE="0" NEURON="16"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="17"/>
+    <POST CHIP="0" CORE="0" NEURON="17"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="18"/>
+    <POST CHIP="0" CORE="0" NEURON="18"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="19"/>
+    <POST CHIP="0" CORE="0" NEURON="19"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="20"/>
+    <POST CHIP="0" CORE="0" NEURON="20"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="21"/>
+    <POST CHIP="0" CORE="0" NEURON="21"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="22"/>
+    <POST CHIP="0" CORE="0" NEURON="22"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="23"/>
+    <POST CHIP="0" CORE="0" NEURON="23"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="24"/>
+    <POST CHIP="0" CORE="0" NEURON="24"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="25"/>
+    <POST CHIP="0" CORE="0" NEURON="25"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="26"/>
+    <POST CHIP="0" CORE="0" NEURON="26"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="27"/>
+    <POST CHIP="0" CORE="0" NEURON="27"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="28"/>
+    <POST CHIP="0" CORE="0" NEURON="28"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="29"/>
+    <POST CHIP="0" CORE="0" NEURON="29"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="30"/>
+    <POST CHIP="0" CORE="0" NEURON="30"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="31"/>
+    <POST CHIP="0" CORE="0" NEURON="31"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="32"/>
+    <POST CHIP="0" CORE="0" NEURON="32"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="33"/>
+    <POST CHIP="0" CORE="0" NEURON="33"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="34"/>
+    <POST CHIP="0" CORE="0" NEURON="34"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="35"/>
+    <POST CHIP="0" CORE="0" NEURON="35"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="36"/>
+    <POST CHIP="0" CORE="0" NEURON="36"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="37"/>
+    <POST CHIP="0" CORE="0" NEURON="37"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="38"/>
+    <POST CHIP="0" CORE="0" NEURON="38"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="39"/>
+    <POST CHIP="0" CORE="0" NEURON="39"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="40"/>
+    <POST CHIP="0" CORE="0" NEURON="40"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="41"/>
+    <POST CHIP="0" CORE="0" NEURON="41"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="42"/>
+    <POST CHIP="0" CORE="0" NEURON="42"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="43"/>
+    <POST CHIP="0" CORE="0" NEURON="43"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="44"/>
+    <POST CHIP="0" CORE="0" NEURON="44"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="45"/>
+    <POST CHIP="0" CORE="0" NEURON="45"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="46"/>
+    <POST CHIP="0" CORE="0" NEURON="46"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="47"/>
+    <POST CHIP="0" CORE="0" NEURON="47"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="48"/>
+    <POST CHIP="0" CORE="0" NEURON="48"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="49"/>
+    <POST CHIP="0" CORE="0" NEURON="49"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="50"/>
+    <POST CHIP="0" CORE="0" NEURON="50"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="51"/>
+    <POST CHIP="0" CORE="0" NEURON="51"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="52"/>
+    <POST CHIP="0" CORE="0" NEURON="52"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="53"/>
+    <POST CHIP="0" CORE="0" NEURON="53"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="54"/>
+    <POST CHIP="0" CORE="0" NEURON="54"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="55"/>
+    <POST CHIP="0" CORE="0" NEURON="55"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="56"/>
+    <POST CHIP="0" CORE="0" NEURON="56"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="57"/>
+    <POST CHIP="0" CORE="0" NEURON="57"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="58"/>
+    <POST CHIP="0" CORE="0" NEURON="58"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="59"/>
+    <POST CHIP="0" CORE="0" NEURON="59"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="60"/>
+    <POST CHIP="0" CORE="0" NEURON="60"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="61"/>
+    <POST CHIP="0" CORE="0" NEURON="61"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="62"/>
+    <POST CHIP="0" CORE="0" NEURON="62"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="63"/>
+    <POST CHIP="0" CORE="0" NEURON="63"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="64"/>
+    <POST CHIP="0" CORE="0" NEURON="64"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="65"/>
+    <POST CHIP="0" CORE="0" NEURON="65"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="66"/>
+    <POST CHIP="0" CORE="0" NEURON="66"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="67"/>
+    <POST CHIP="0" CORE="0" NEURON="67"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="68"/>
+    <POST CHIP="0" CORE="0" NEURON="68"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="69"/>
+    <POST CHIP="0" CORE="0" NEURON="69"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="70"/>
+    <POST CHIP="0" CORE="0" NEURON="70"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="71"/>
+    <POST CHIP="0" CORE="0" NEURON="71"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="72"/>
+    <POST CHIP="0" CORE="0" NEURON="72"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="73"/>
+    <POST CHIP="0" CORE="0" NEURON="73"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="74"/>
+    <POST CHIP="0" CORE="0" NEURON="74"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="75"/>
+    <POST CHIP="0" CORE="0" NEURON="75"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="76"/>
+    <POST CHIP="0" CORE="0" NEURON="76"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="77"/>
+    <POST CHIP="0" CORE="0" NEURON="77"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="78"/>
+    <POST CHIP="0" CORE="0" NEURON="78"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="79"/>
+    <POST CHIP="0" CORE="0" NEURON="79"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="80"/>
+    <POST CHIP="0" CORE="0" NEURON="80"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="81"/>
+    <POST CHIP="0" CORE="0" NEURON="81"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="82"/>
+    <POST CHIP="0" CORE="0" NEURON="82"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="83"/>
+    <POST CHIP="0" CORE="0" NEURON="83"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="84"/>
+    <POST CHIP="0" CORE="0" NEURON="84"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="85"/>
+    <POST CHIP="0" CORE="0" NEURON="85"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="86"/>
+    <POST CHIP="0" CORE="0" NEURON="86"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="87"/>
+    <POST CHIP="0" CORE="0" NEURON="87"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="88"/>
+    <POST CHIP="0" CORE="0" NEURON="88"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="89"/>
+    <POST CHIP="0" CORE="0" NEURON="89"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="90"/>
+    <POST CHIP="0" CORE="0" NEURON="90"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="91"/>
+    <POST CHIP="0" CORE="0" NEURON="91"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="92"/>
+    <POST CHIP="0" CORE="0" NEURON="92"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="93"/>
+    <POST CHIP="0" CORE="0" NEURON="93"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="94"/>
+    <POST CHIP="0" CORE="0" NEURON="94"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="95"/>
+    <POST CHIP="0" CORE="0" NEURON="95"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="96"/>
+    <POST CHIP="0" CORE="0" NEURON="96"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="97"/>
+    <POST CHIP="0" CORE="0" NEURON="97"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="98"/>
+    <POST CHIP="0" CORE="0" NEURON="98"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="99"/>
+    <POST CHIP="0" CORE="0" NEURON="99"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="100"/>
+    <POST CHIP="0" CORE="0" NEURON="100"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="101"/>
+    <POST CHIP="0" CORE="0" NEURON="101"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="102"/>
+    <POST CHIP="0" CORE="0" NEURON="102"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="103"/>
+    <POST CHIP="0" CORE="0" NEURON="103"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="104"/>
+    <POST CHIP="0" CORE="0" NEURON="104"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="105"/>
+    <POST CHIP="0" CORE="0" NEURON="105"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="106"/>
+    <POST CHIP="0" CORE="0" NEURON="106"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="107"/>
+    <POST CHIP="0" CORE="0" NEURON="107"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="108"/>
+    <POST CHIP="0" CORE="0" NEURON="108"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="109"/>
+    <POST CHIP="0" CORE="0" NEURON="109"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="110"/>
+    <POST CHIP="0" CORE="0" NEURON="110"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="111"/>
+    <POST CHIP="0" CORE="0" NEURON="111"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="112"/>
+    <POST CHIP="0" CORE="0" NEURON="112"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="113"/>
+    <POST CHIP="0" CORE="0" NEURON="113"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="114"/>
+    <POST CHIP="0" CORE="0" NEURON="114"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="115"/>
+    <POST CHIP="0" CORE="0" NEURON="115"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="116"/>
+    <POST CHIP="0" CORE="0" NEURON="116"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="117"/>
+    <POST CHIP="0" CORE="0" NEURON="117"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="118"/>
+    <POST CHIP="0" CORE="0" NEURON="118"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="119"/>
+    <POST CHIP="0" CORE="0" NEURON="119"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="120"/>
+    <POST CHIP="0" CORE="0" NEURON="120"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="121"/>
+    <POST CHIP="0" CORE="0" NEURON="121"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="122"/>
+    <POST CHIP="0" CORE="0" NEURON="122"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="123"/>
+    <POST CHIP="0" CORE="0" NEURON="123"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="124"/>
+    <POST CHIP="0" CORE="0" NEURON="124"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="125"/>
+    <POST CHIP="0" CORE="0" NEURON="125"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="126"/>
+    <POST CHIP="0" CORE="0" NEURON="126"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="127"/>
+    <POST CHIP="0" CORE="0" NEURON="127"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="128"/>
+    <POST CHIP="0" CORE="0" NEURON="128"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="129"/>
+    <POST CHIP="0" CORE="0" NEURON="129"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="130"/>
+    <POST CHIP="0" CORE="0" NEURON="130"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="131"/>
+    <POST CHIP="0" CORE="0" NEURON="131"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="132"/>
+    <POST CHIP="0" CORE="0" NEURON="132"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="133"/>
+    <POST CHIP="0" CORE="0" NEURON="133"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="134"/>
+    <POST CHIP="0" CORE="0" NEURON="134"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="135"/>
+    <POST CHIP="0" CORE="0" NEURON="135"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="136"/>
+    <POST CHIP="0" CORE="0" NEURON="136"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="137"/>
+    <POST CHIP="0" CORE="0" NEURON="137"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="138"/>
+    <POST CHIP="0" CORE="0" NEURON="138"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="139"/>
+    <POST CHIP="0" CORE="0" NEURON="139"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="140"/>
+    <POST CHIP="0" CORE="0" NEURON="140"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="141"/>
+    <POST CHIP="0" CORE="0" NEURON="141"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="142"/>
+    <POST CHIP="0" CORE="0" NEURON="142"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="143"/>
+    <POST CHIP="0" CORE="0" NEURON="143"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="144"/>
+    <POST CHIP="0" CORE="0" NEURON="144"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="145"/>
+    <POST CHIP="0" CORE="0" NEURON="145"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="146"/>
+    <POST CHIP="0" CORE="0" NEURON="146"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="147"/>
+    <POST CHIP="0" CORE="0" NEURON="147"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="148"/>
+    <POST CHIP="0" CORE="0" NEURON="148"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="149"/>
+    <POST CHIP="0" CORE="0" NEURON="149"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="150"/>
+    <POST CHIP="0" CORE="0" NEURON="150"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="151"/>
+    <POST CHIP="0" CORE="0" NEURON="151"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="152"/>
+    <POST CHIP="0" CORE="0" NEURON="152"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="153"/>
+    <POST CHIP="0" CORE="0" NEURON="153"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="154"/>
+    <POST CHIP="0" CORE="0" NEURON="154"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="155"/>
+    <POST CHIP="0" CORE="0" NEURON="155"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="156"/>
+    <POST CHIP="0" CORE="0" NEURON="156"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="157"/>
+    <POST CHIP="0" CORE="0" NEURON="157"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="158"/>
+    <POST CHIP="0" CORE="0" NEURON="158"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="159"/>
+    <POST CHIP="0" CORE="0" NEURON="159"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="160"/>
+    <POST CHIP="0" CORE="0" NEURON="160"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="161"/>
+    <POST CHIP="0" CORE="0" NEURON="161"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="162"/>
+    <POST CHIP="0" CORE="0" NEURON="162"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="163"/>
+    <POST CHIP="0" CORE="0" NEURON="163"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="164"/>
+    <POST CHIP="0" CORE="0" NEURON="164"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="165"/>
+    <POST CHIP="0" CORE="0" NEURON="165"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="166"/>
+    <POST CHIP="0" CORE="0" NEURON="166"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="167"/>
+    <POST CHIP="0" CORE="0" NEURON="167"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="168"/>
+    <POST CHIP="0" CORE="0" NEURON="168"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="169"/>
+    <POST CHIP="0" CORE="0" NEURON="169"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="170"/>
+    <POST CHIP="0" CORE="0" NEURON="170"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="171"/>
+    <POST CHIP="0" CORE="0" NEURON="171"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="172"/>
+    <POST CHIP="0" CORE="0" NEURON="172"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="173"/>
+    <POST CHIP="0" CORE="0" NEURON="173"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="174"/>
+    <POST CHIP="0" CORE="0" NEURON="174"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="175"/>
+    <POST CHIP="0" CORE="0" NEURON="175"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="176"/>
+    <POST CHIP="0" CORE="0" NEURON="176"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="177"/>
+    <POST CHIP="0" CORE="0" NEURON="177"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="178"/>
+    <POST CHIP="0" CORE="0" NEURON="178"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="179"/>
+    <POST CHIP="0" CORE="0" NEURON="179"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="180"/>
+    <POST CHIP="0" CORE="0" NEURON="180"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="181"/>
+    <POST CHIP="0" CORE="0" NEURON="181"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="182"/>
+    <POST CHIP="0" CORE="0" NEURON="182"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="183"/>
+    <POST CHIP="0" CORE="0" NEURON="183"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="184"/>
+    <POST CHIP="0" CORE="0" NEURON="184"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="185"/>
+    <POST CHIP="0" CORE="0" NEURON="185"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="186"/>
+    <POST CHIP="0" CORE="0" NEURON="186"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="187"/>
+    <POST CHIP="0" CORE="0" NEURON="187"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="188"/>
+    <POST CHIP="0" CORE="0" NEURON="188"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="189"/>
+    <POST CHIP="0" CORE="0" NEURON="189"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="190"/>
+    <POST CHIP="0" CORE="0" NEURON="190"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="191"/>
+    <POST CHIP="0" CORE="0" NEURON="191"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="192"/>
+    <POST CHIP="0" CORE="0" NEURON="192"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="193"/>
+    <POST CHIP="0" CORE="0" NEURON="193"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="194"/>
+    <POST CHIP="0" CORE="0" NEURON="194"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="195"/>
+    <POST CHIP="0" CORE="0" NEURON="195"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="196"/>
+    <POST CHIP="0" CORE="0" NEURON="196"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="197"/>
+    <POST CHIP="0" CORE="0" NEURON="197"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="198"/>
+    <POST CHIP="0" CORE="0" NEURON="198"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="199"/>
+    <POST CHIP="0" CORE="0" NEURON="199"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="200"/>
+    <POST CHIP="0" CORE="0" NEURON="200"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="201"/>
+    <POST CHIP="0" CORE="0" NEURON="201"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="202"/>
+    <POST CHIP="0" CORE="0" NEURON="202"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="203"/>
+    <POST CHIP="0" CORE="0" NEURON="203"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="204"/>
+    <POST CHIP="0" CORE="0" NEURON="204"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="205"/>
+    <POST CHIP="0" CORE="0" NEURON="205"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="206"/>
+    <POST CHIP="0" CORE="0" NEURON="206"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="207"/>
+    <POST CHIP="0" CORE="0" NEURON="207"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="208"/>
+    <POST CHIP="0" CORE="0" NEURON="208"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="209"/>
+    <POST CHIP="0" CORE="0" NEURON="209"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="210"/>
+    <POST CHIP="0" CORE="0" NEURON="210"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="211"/>
+    <POST CHIP="0" CORE="0" NEURON="211"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="212"/>
+    <POST CHIP="0" CORE="0" NEURON="212"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="213"/>
+    <POST CHIP="0" CORE="0" NEURON="213"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="214"/>
+    <POST CHIP="0" CORE="0" NEURON="214"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="215"/>
+    <POST CHIP="0" CORE="0" NEURON="215"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="216"/>
+    <POST CHIP="0" CORE="0" NEURON="216"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="217"/>
+    <POST CHIP="0" CORE="0" NEURON="217"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="218"/>
+    <POST CHIP="0" CORE="0" NEURON="218"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="219"/>
+    <POST CHIP="0" CORE="0" NEURON="219"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="220"/>
+    <POST CHIP="0" CORE="0" NEURON="220"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="221"/>
+    <POST CHIP="0" CORE="0" NEURON="221"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="222"/>
+    <POST CHIP="0" CORE="0" NEURON="222"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="223"/>
+    <POST CHIP="0" CORE="0" NEURON="223"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="224"/>
+    <POST CHIP="0" CORE="0" NEURON="224"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="225"/>
+    <POST CHIP="0" CORE="0" NEURON="225"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="226"/>
+    <POST CHIP="0" CORE="0" NEURON="226"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="227"/>
+    <POST CHIP="0" CORE="0" NEURON="227"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="228"/>
+    <POST CHIP="0" CORE="0" NEURON="228"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="229"/>
+    <POST CHIP="0" CORE="0" NEURON="229"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="230"/>
+    <POST CHIP="0" CORE="0" NEURON="230"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="231"/>
+    <POST CHIP="0" CORE="0" NEURON="231"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="232"/>
+    <POST CHIP="0" CORE="0" NEURON="232"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="233"/>
+    <POST CHIP="0" CORE="0" NEURON="233"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="234"/>
+    <POST CHIP="0" CORE="0" NEURON="234"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="235"/>
+    <POST CHIP="0" CORE="0" NEURON="235"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="236"/>
+    <POST CHIP="0" CORE="0" NEURON="236"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="237"/>
+    <POST CHIP="0" CORE="0" NEURON="237"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="238"/>
+    <POST CHIP="0" CORE="0" NEURON="238"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="239"/>
+    <POST CHIP="0" CORE="0" NEURON="239"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="240"/>
+    <POST CHIP="0" CORE="0" NEURON="240"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="241"/>
+    <POST CHIP="0" CORE="0" NEURON="241"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="242"/>
+    <POST CHIP="0" CORE="0" NEURON="242"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="243"/>
+    <POST CHIP="0" CORE="0" NEURON="243"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="244"/>
+    <POST CHIP="0" CORE="0" NEURON="244"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="245"/>
+    <POST CHIP="0" CORE="0" NEURON="245"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="246"/>
+    <POST CHIP="0" CORE="0" NEURON="246"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="247"/>
+    <POST CHIP="0" CORE="0" NEURON="247"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="248"/>
+    <POST CHIP="0" CORE="0" NEURON="248"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="249"/>
+    <POST CHIP="0" CORE="0" NEURON="249"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="250"/>
+    <POST CHIP="0" CORE="0" NEURON="250"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="251"/>
+    <POST CHIP="0" CORE="0" NEURON="251"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="252"/>
+    <POST CHIP="0" CORE="0" NEURON="252"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="253"/>
+    <POST CHIP="0" CORE="0" NEURON="253"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="254"/>
+    <POST CHIP="0" CORE="0" NEURON="254"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="2">
+    <PRE CHIP="2" CORE="2" NEURON="255"/>
+    <POST CHIP="0" CORE="0" NEURON="255"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="0"/>
+    <POST CHIP="0" CORE="0" NEURON="0"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="1"/>
+    <POST CHIP="0" CORE="0" NEURON="1"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="2"/>
+    <POST CHIP="0" CORE="0" NEURON="2"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="3"/>
+    <POST CHIP="0" CORE="0" NEURON="3"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="4"/>
+    <POST CHIP="0" CORE="0" NEURON="4"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="5"/>
+    <POST CHIP="0" CORE="0" NEURON="5"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="6"/>
+    <POST CHIP="0" CORE="0" NEURON="6"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="7"/>
+    <POST CHIP="0" CORE="0" NEURON="7"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="8"/>
+    <POST CHIP="0" CORE="0" NEURON="8"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="9"/>
+    <POST CHIP="0" CORE="0" NEURON="9"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="10"/>
+    <POST CHIP="0" CORE="0" NEURON="10"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="11"/>
+    <POST CHIP="0" CORE="0" NEURON="11"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="12"/>
+    <POST CHIP="0" CORE="0" NEURON="12"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="13"/>
+    <POST CHIP="0" CORE="0" NEURON="13"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="14"/>
+    <POST CHIP="0" CORE="0" NEURON="14"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="15"/>
+    <POST CHIP="0" CORE="0" NEURON="15"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="16"/>
+    <POST CHIP="0" CORE="0" NEURON="16"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="17"/>
+    <POST CHIP="0" CORE="0" NEURON="17"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="18"/>
+    <POST CHIP="0" CORE="0" NEURON="18"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="19"/>
+    <POST CHIP="0" CORE="0" NEURON="19"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="20"/>
+    <POST CHIP="0" CORE="0" NEURON="20"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="21"/>
+    <POST CHIP="0" CORE="0" NEURON="21"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="22"/>
+    <POST CHIP="0" CORE="0" NEURON="22"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="23"/>
+    <POST CHIP="0" CORE="0" NEURON="23"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="24"/>
+    <POST CHIP="0" CORE="0" NEURON="24"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="25"/>
+    <POST CHIP="0" CORE="0" NEURON="25"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="26"/>
+    <POST CHIP="0" CORE="0" NEURON="26"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="27"/>
+    <POST CHIP="0" CORE="0" NEURON="27"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="28"/>
+    <POST CHIP="0" CORE="0" NEURON="28"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="29"/>
+    <POST CHIP="0" CORE="0" NEURON="29"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="30"/>
+    <POST CHIP="0" CORE="0" NEURON="30"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="31"/>
+    <POST CHIP="0" CORE="0" NEURON="31"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="32"/>
+    <POST CHIP="0" CORE="0" NEURON="32"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="33"/>
+    <POST CHIP="0" CORE="0" NEURON="33"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="34"/>
+    <POST CHIP="0" CORE="0" NEURON="34"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="35"/>
+    <POST CHIP="0" CORE="0" NEURON="35"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="36"/>
+    <POST CHIP="0" CORE="0" NEURON="36"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="37"/>
+    <POST CHIP="0" CORE="0" NEURON="37"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="38"/>
+    <POST CHIP="0" CORE="0" NEURON="38"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="39"/>
+    <POST CHIP="0" CORE="0" NEURON="39"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="40"/>
+    <POST CHIP="0" CORE="0" NEURON="40"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="41"/>
+    <POST CHIP="0" CORE="0" NEURON="41"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="42"/>
+    <POST CHIP="0" CORE="0" NEURON="42"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="43"/>
+    <POST CHIP="0" CORE="0" NEURON="43"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="44"/>
+    <POST CHIP="0" CORE="0" NEURON="44"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="45"/>
+    <POST CHIP="0" CORE="0" NEURON="45"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="46"/>
+    <POST CHIP="0" CORE="0" NEURON="46"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="47"/>
+    <POST CHIP="0" CORE="0" NEURON="47"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="48"/>
+    <POST CHIP="0" CORE="0" NEURON="48"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="49"/>
+    <POST CHIP="0" CORE="0" NEURON="49"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="50"/>
+    <POST CHIP="0" CORE="0" NEURON="50"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="51"/>
+    <POST CHIP="0" CORE="0" NEURON="51"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="52"/>
+    <POST CHIP="0" CORE="0" NEURON="52"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="53"/>
+    <POST CHIP="0" CORE="0" NEURON="53"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="54"/>
+    <POST CHIP="0" CORE="0" NEURON="54"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="55"/>
+    <POST CHIP="0" CORE="0" NEURON="55"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="56"/>
+    <POST CHIP="0" CORE="0" NEURON="56"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="57"/>
+    <POST CHIP="0" CORE="0" NEURON="57"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="58"/>
+    <POST CHIP="0" CORE="0" NEURON="58"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="59"/>
+    <POST CHIP="0" CORE="0" NEURON="59"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="60"/>
+    <POST CHIP="0" CORE="0" NEURON="60"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="61"/>
+    <POST CHIP="0" CORE="0" NEURON="61"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="62"/>
+    <POST CHIP="0" CORE="0" NEURON="62"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="63"/>
+    <POST CHIP="0" CORE="0" NEURON="63"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="64"/>
+    <POST CHIP="0" CORE="0" NEURON="64"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="65"/>
+    <POST CHIP="0" CORE="0" NEURON="65"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="66"/>
+    <POST CHIP="0" CORE="0" NEURON="66"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="67"/>
+    <POST CHIP="0" CORE="0" NEURON="67"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="68"/>
+    <POST CHIP="0" CORE="0" NEURON="68"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="69"/>
+    <POST CHIP="0" CORE="0" NEURON="69"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="70"/>
+    <POST CHIP="0" CORE="0" NEURON="70"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="71"/>
+    <POST CHIP="0" CORE="0" NEURON="71"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="72"/>
+    <POST CHIP="0" CORE="0" NEURON="72"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="73"/>
+    <POST CHIP="0" CORE="0" NEURON="73"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="74"/>
+    <POST CHIP="0" CORE="0" NEURON="74"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="75"/>
+    <POST CHIP="0" CORE="0" NEURON="75"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="76"/>
+    <POST CHIP="0" CORE="0" NEURON="76"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="77"/>
+    <POST CHIP="0" CORE="0" NEURON="77"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="78"/>
+    <POST CHIP="0" CORE="0" NEURON="78"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="79"/>
+    <POST CHIP="0" CORE="0" NEURON="79"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="80"/>
+    <POST CHIP="0" CORE="0" NEURON="80"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="81"/>
+    <POST CHIP="0" CORE="0" NEURON="81"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="82"/>
+    <POST CHIP="0" CORE="0" NEURON="82"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="83"/>
+    <POST CHIP="0" CORE="0" NEURON="83"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="84"/>
+    <POST CHIP="0" CORE="0" NEURON="84"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="85"/>
+    <POST CHIP="0" CORE="0" NEURON="85"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="86"/>
+    <POST CHIP="0" CORE="0" NEURON="86"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="87"/>
+    <POST CHIP="0" CORE="0" NEURON="87"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="88"/>
+    <POST CHIP="0" CORE="0" NEURON="88"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="89"/>
+    <POST CHIP="0" CORE="0" NEURON="89"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="90"/>
+    <POST CHIP="0" CORE="0" NEURON="90"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="91"/>
+    <POST CHIP="0" CORE="0" NEURON="91"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="92"/>
+    <POST CHIP="0" CORE="0" NEURON="92"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="93"/>
+    <POST CHIP="0" CORE="0" NEURON="93"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="94"/>
+    <POST CHIP="0" CORE="0" NEURON="94"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="95"/>
+    <POST CHIP="0" CORE="0" NEURON="95"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="96"/>
+    <POST CHIP="0" CORE="0" NEURON="96"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="97"/>
+    <POST CHIP="0" CORE="0" NEURON="97"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="98"/>
+    <POST CHIP="0" CORE="0" NEURON="98"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="99"/>
+    <POST CHIP="0" CORE="0" NEURON="99"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="100"/>
+    <POST CHIP="0" CORE="0" NEURON="100"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="101"/>
+    <POST CHIP="0" CORE="0" NEURON="101"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="102"/>
+    <POST CHIP="0" CORE="0" NEURON="102"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="103"/>
+    <POST CHIP="0" CORE="0" NEURON="103"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="104"/>
+    <POST CHIP="0" CORE="0" NEURON="104"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="105"/>
+    <POST CHIP="0" CORE="0" NEURON="105"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="106"/>
+    <POST CHIP="0" CORE="0" NEURON="106"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="107"/>
+    <POST CHIP="0" CORE="0" NEURON="107"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="108"/>
+    <POST CHIP="0" CORE="0" NEURON="108"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="109"/>
+    <POST CHIP="0" CORE="0" NEURON="109"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="110"/>
+    <POST CHIP="0" CORE="0" NEURON="110"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="111"/>
+    <POST CHIP="0" CORE="0" NEURON="111"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="112"/>
+    <POST CHIP="0" CORE="0" NEURON="112"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="113"/>
+    <POST CHIP="0" CORE="0" NEURON="113"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="114"/>
+    <POST CHIP="0" CORE="0" NEURON="114"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="115"/>
+    <POST CHIP="0" CORE="0" NEURON="115"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="116"/>
+    <POST CHIP="0" CORE="0" NEURON="116"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="117"/>
+    <POST CHIP="0" CORE="0" NEURON="117"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="118"/>
+    <POST CHIP="0" CORE="0" NEURON="118"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="119"/>
+    <POST CHIP="0" CORE="0" NEURON="119"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="120"/>
+    <POST CHIP="0" CORE="0" NEURON="120"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="121"/>
+    <POST CHIP="0" CORE="0" NEURON="121"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="122"/>
+    <POST CHIP="0" CORE="0" NEURON="122"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="123"/>
+    <POST CHIP="0" CORE="0" NEURON="123"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="124"/>
+    <POST CHIP="0" CORE="0" NEURON="124"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="125"/>
+    <POST CHIP="0" CORE="0" NEURON="125"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="126"/>
+    <POST CHIP="0" CORE="0" NEURON="126"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="127"/>
+    <POST CHIP="0" CORE="0" NEURON="127"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="128"/>
+    <POST CHIP="0" CORE="0" NEURON="128"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="129"/>
+    <POST CHIP="0" CORE="0" NEURON="129"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="130"/>
+    <POST CHIP="0" CORE="0" NEURON="130"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="131"/>
+    <POST CHIP="0" CORE="0" NEURON="131"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="132"/>
+    <POST CHIP="0" CORE="0" NEURON="132"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="133"/>
+    <POST CHIP="0" CORE="0" NEURON="133"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="134"/>
+    <POST CHIP="0" CORE="0" NEURON="134"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="135"/>
+    <POST CHIP="0" CORE="0" NEURON="135"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="136"/>
+    <POST CHIP="0" CORE="0" NEURON="136"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="137"/>
+    <POST CHIP="0" CORE="0" NEURON="137"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="138"/>
+    <POST CHIP="0" CORE="0" NEURON="138"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="139"/>
+    <POST CHIP="0" CORE="0" NEURON="139"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="140"/>
+    <POST CHIP="0" CORE="0" NEURON="140"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="141"/>
+    <POST CHIP="0" CORE="0" NEURON="141"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="142"/>
+    <POST CHIP="0" CORE="0" NEURON="142"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="143"/>
+    <POST CHIP="0" CORE="0" NEURON="143"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="144"/>
+    <POST CHIP="0" CORE="0" NEURON="144"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="145"/>
+    <POST CHIP="0" CORE="0" NEURON="145"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="146"/>
+    <POST CHIP="0" CORE="0" NEURON="146"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="147"/>
+    <POST CHIP="0" CORE="0" NEURON="147"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="148"/>
+    <POST CHIP="0" CORE="0" NEURON="148"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="149"/>
+    <POST CHIP="0" CORE="0" NEURON="149"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="150"/>
+    <POST CHIP="0" CORE="0" NEURON="150"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="151"/>
+    <POST CHIP="0" CORE="0" NEURON="151"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="152"/>
+    <POST CHIP="0" CORE="0" NEURON="152"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="153"/>
+    <POST CHIP="0" CORE="0" NEURON="153"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="154"/>
+    <POST CHIP="0" CORE="0" NEURON="154"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="155"/>
+    <POST CHIP="0" CORE="0" NEURON="155"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="156"/>
+    <POST CHIP="0" CORE="0" NEURON="156"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="157"/>
+    <POST CHIP="0" CORE="0" NEURON="157"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="158"/>
+    <POST CHIP="0" CORE="0" NEURON="158"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="159"/>
+    <POST CHIP="0" CORE="0" NEURON="159"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="160"/>
+    <POST CHIP="0" CORE="0" NEURON="160"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="161"/>
+    <POST CHIP="0" CORE="0" NEURON="161"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="162"/>
+    <POST CHIP="0" CORE="0" NEURON="162"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="163"/>
+    <POST CHIP="0" CORE="0" NEURON="163"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="164"/>
+    <POST CHIP="0" CORE="0" NEURON="164"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="165"/>
+    <POST CHIP="0" CORE="0" NEURON="165"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="166"/>
+    <POST CHIP="0" CORE="0" NEURON="166"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="167"/>
+    <POST CHIP="0" CORE="0" NEURON="167"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="168"/>
+    <POST CHIP="0" CORE="0" NEURON="168"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="169"/>
+    <POST CHIP="0" CORE="0" NEURON="169"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="170"/>
+    <POST CHIP="0" CORE="0" NEURON="170"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="171"/>
+    <POST CHIP="0" CORE="0" NEURON="171"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="172"/>
+    <POST CHIP="0" CORE="0" NEURON="172"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="173"/>
+    <POST CHIP="0" CORE="0" NEURON="173"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="174"/>
+    <POST CHIP="0" CORE="0" NEURON="174"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="175"/>
+    <POST CHIP="0" CORE="0" NEURON="175"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="176"/>
+    <POST CHIP="0" CORE="0" NEURON="176"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="177"/>
+    <POST CHIP="0" CORE="0" NEURON="177"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="178"/>
+    <POST CHIP="0" CORE="0" NEURON="178"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="179"/>
+    <POST CHIP="0" CORE="0" NEURON="179"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="180"/>
+    <POST CHIP="0" CORE="0" NEURON="180"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="181"/>
+    <POST CHIP="0" CORE="0" NEURON="181"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="182"/>
+    <POST CHIP="0" CORE="0" NEURON="182"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="183"/>
+    <POST CHIP="0" CORE="0" NEURON="183"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="184"/>
+    <POST CHIP="0" CORE="0" NEURON="184"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="185"/>
+    <POST CHIP="0" CORE="0" NEURON="185"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="186"/>
+    <POST CHIP="0" CORE="0" NEURON="186"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="187"/>
+    <POST CHIP="0" CORE="0" NEURON="187"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="188"/>
+    <POST CHIP="0" CORE="0" NEURON="188"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="189"/>
+    <POST CHIP="0" CORE="0" NEURON="189"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="190"/>
+    <POST CHIP="0" CORE="0" NEURON="190"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="191"/>
+    <POST CHIP="0" CORE="0" NEURON="191"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="192"/>
+    <POST CHIP="0" CORE="0" NEURON="192"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="193"/>
+    <POST CHIP="0" CORE="0" NEURON="193"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="194"/>
+    <POST CHIP="0" CORE="0" NEURON="194"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="195"/>
+    <POST CHIP="0" CORE="0" NEURON="195"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="196"/>
+    <POST CHIP="0" CORE="0" NEURON="196"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="197"/>
+    <POST CHIP="0" CORE="0" NEURON="197"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="198"/>
+    <POST CHIP="0" CORE="0" NEURON="198"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="199"/>
+    <POST CHIP="0" CORE="0" NEURON="199"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="200"/>
+    <POST CHIP="0" CORE="0" NEURON="200"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="201"/>
+    <POST CHIP="0" CORE="0" NEURON="201"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="202"/>
+    <POST CHIP="0" CORE="0" NEURON="202"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="203"/>
+    <POST CHIP="0" CORE="0" NEURON="203"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="204"/>
+    <POST CHIP="0" CORE="0" NEURON="204"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="205"/>
+    <POST CHIP="0" CORE="0" NEURON="205"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="206"/>
+    <POST CHIP="0" CORE="0" NEURON="206"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="207"/>
+    <POST CHIP="0" CORE="0" NEURON="207"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="208"/>
+    <POST CHIP="0" CORE="0" NEURON="208"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="209"/>
+    <POST CHIP="0" CORE="0" NEURON="209"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="210"/>
+    <POST CHIP="0" CORE="0" NEURON="210"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="211"/>
+    <POST CHIP="0" CORE="0" NEURON="211"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="212"/>
+    <POST CHIP="0" CORE="0" NEURON="212"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="213"/>
+    <POST CHIP="0" CORE="0" NEURON="213"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="214"/>
+    <POST CHIP="0" CORE="0" NEURON="214"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="215"/>
+    <POST CHIP="0" CORE="0" NEURON="215"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="216"/>
+    <POST CHIP="0" CORE="0" NEURON="216"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="217"/>
+    <POST CHIP="0" CORE="0" NEURON="217"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="218"/>
+    <POST CHIP="0" CORE="0" NEURON="218"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="219"/>
+    <POST CHIP="0" CORE="0" NEURON="219"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="220"/>
+    <POST CHIP="0" CORE="0" NEURON="220"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="221"/>
+    <POST CHIP="0" CORE="0" NEURON="221"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="222"/>
+    <POST CHIP="0" CORE="0" NEURON="222"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="223"/>
+    <POST CHIP="0" CORE="0" NEURON="223"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="224"/>
+    <POST CHIP="0" CORE="0" NEURON="224"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="225"/>
+    <POST CHIP="0" CORE="0" NEURON="225"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="226"/>
+    <POST CHIP="0" CORE="0" NEURON="226"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="227"/>
+    <POST CHIP="0" CORE="0" NEURON="227"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="228"/>
+    <POST CHIP="0" CORE="0" NEURON="228"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="229"/>
+    <POST CHIP="0" CORE="0" NEURON="229"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="230"/>
+    <POST CHIP="0" CORE="0" NEURON="230"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="231"/>
+    <POST CHIP="0" CORE="0" NEURON="231"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="232"/>
+    <POST CHIP="0" CORE="0" NEURON="232"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="233"/>
+    <POST CHIP="0" CORE="0" NEURON="233"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="234"/>
+    <POST CHIP="0" CORE="0" NEURON="234"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="235"/>
+    <POST CHIP="0" CORE="0" NEURON="235"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="236"/>
+    <POST CHIP="0" CORE="0" NEURON="236"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="237"/>
+    <POST CHIP="0" CORE="0" NEURON="237"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="238"/>
+    <POST CHIP="0" CORE="0" NEURON="238"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="239"/>
+    <POST CHIP="0" CORE="0" NEURON="239"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="240"/>
+    <POST CHIP="0" CORE="0" NEURON="240"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="241"/>
+    <POST CHIP="0" CORE="0" NEURON="241"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="242"/>
+    <POST CHIP="0" CORE="0" NEURON="242"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="243"/>
+    <POST CHIP="0" CORE="0" NEURON="243"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="244"/>
+    <POST CHIP="0" CORE="0" NEURON="244"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="245"/>
+    <POST CHIP="0" CORE="0" NEURON="245"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="246"/>
+    <POST CHIP="0" CORE="0" NEURON="246"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="247"/>
+    <POST CHIP="0" CORE="0" NEURON="247"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="248"/>
+    <POST CHIP="0" CORE="0" NEURON="248"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="249"/>
+    <POST CHIP="0" CORE="0" NEURON="249"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="250"/>
+    <POST CHIP="0" CORE="0" NEURON="250"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="251"/>
+    <POST CHIP="0" CORE="0" NEURON="251"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="252"/>
+    <POST CHIP="0" CORE="0" NEURON="252"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="253"/>
+    <POST CHIP="0" CORE="0" NEURON="253"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="254"/>
+    <POST CHIP="0" CORE="0" NEURON="254"/>
+  </CONNECTION>
+  <CONNECTION cam_slots_number="16" connection_type="3">
+    <PRE CHIP="3" CORE="3" NEURON="255"/>
+    <POST CHIP="0" CORE="0" NEURON="255"/>
+  </CONNECTION>
+</CONNECTIONS>

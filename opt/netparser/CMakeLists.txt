@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.9)
+INCLUDE(FindPkgConfig)
+
+IF (NOT NETPARSER)
+	SET(NETPARSER 0 CACHE BOOL "Enable the netparser module")
+ENDIF()
+
+IF (NETPARSER)
+	ADD_LIBRARY(netparser SHARED Neuron.cpp)
+  ADD_EXECUTABLE(test_netparser test_netparser.cpp)
+
+  PKG_CHECK_MODULES(MXML REQUIRED mxml>=2.7)
+	
+	INCLUDE_DIRECTORIES(${MXML_INCLUDE_DIRS} ${CAER_INCDIRS})
+	LINK_DIRECTORIES(${MXML_LIBRARY_DIRS} ${CAER_LIBDIRS})
+	
+	TARGET_LINK_LIBRARIES(netparser ${CAER_CXX_LIBS} ${MXML_LIBRARIES})
+	TARGET_LINK_LIBRARIES(test_netparser netparser)
+ENDIF()
