@@ -2,6 +2,10 @@
 // Created by rodrigo on 5/30/17.
 //
 
+//
+// Contributed to by Emre Neftci and Andrew Hansen on 02/15/18
+//
+
 #include "Neuron.h"
 
 using namespace std;
@@ -22,8 +26,6 @@ Synapse::Synapse(Neuron* neuron_n, uint8_t connection_type_n, uint8_t camid_n):
         camid(camid_n)
 {
 }
-
-
 
 Neuron::Neuron(uint8_t chip_n ,uint8_t core_n ,uint8_t neuron_n):
         chip(chip_n),
@@ -200,6 +202,7 @@ bool ConnectionManager::ExistsConnection(Neuron *pre, Neuron *post, uint8_t conn
               return true;
             }
         }
+        return false;
     } else { return false; }
   } else { return false; }
 
@@ -326,11 +329,11 @@ void ConnectionManager::DeleteConnection( Synapse * syn, Neuron * post){
             "DB: " + to_string(it->destinationCores);
 
             caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
-        //T caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, pre->chip);
+         caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, pre->chip);
 
-        //T caerDynapseWriteSram(handle, pre->core, pre->neuron, pre->core, (bool)dirBits[0],
-        //T                  dirBits[1], (bool)dirBits[2], dirBits[3], (uint16_t) sramNumber, //first SRAM is for debbugging
-        //T                 it->destinationCores);
+         caerDynapseWriteSram(handle, pre->core, pre->neuron, pre->core, (bool)dirBits[0],
+                          dirBits[1], (bool)dirBits[2], dirBits[3], (uint16_t) sramNumber, //first SRAM is for debbugging
+                         it->destinationCores);
 
             caerLog(CAER_LOG_DEBUG, __func__, "Checking whether SRAM should be deleted");
             printf("%d \n,",it->connectedNeurons.size());
@@ -351,7 +354,7 @@ void ConnectionManager::DeleteConnection( Synapse * syn, Neuron * post){
             //Existing synapse
             Synapse *exsyn = *camPtr; 
             if (*exsyn == *syn){
-              printf("Found Synapse!\n");
+              //printf("Found Synapse!\n");
               message = string("Deleting CAM Settings: ") + 
               "U:" + to_string(post->chip)+ ", " +
               "CAMN:" + to_string(exsyn->camid) + ", " +
@@ -359,11 +362,11 @@ void ConnectionManager::DeleteConnection( Synapse * syn, Neuron * post){
               "POSTADDR:" + to_string(NeuronCamAddress(post->neuron,post->core))+ ", " +
               "TYPE:" + to_string(exsyn->connection_type);
 
-              caerLog(CAER_LOG_NOTICE, __func__, message.c_str());
+              caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
               camPtr = post->CAM.erase(camPtr);
-     //T      caerDynapseWriteCam(handle, 0, NeuronCamAddress(post->neuron,post->core),
-     //T                     (uint32_t) exsyn->camid, connection_type);
-              printf("erased!\n");
+              caerDynapseWriteCam(handle, 0, NeuronCamAddress(post->neuron,post->core),
+                          (uint32_t) exsyn->camid, exsyn->connection_type);
+              //printf("erased!\n");
               erased = true;
               break;
             }
@@ -435,11 +438,11 @@ void ConnectionManager::MakeConnection( Neuron * pre, Neuron * post, uint8_t cam
         caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
 
         // Program SRAM
-        //T caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, pre->chip);
+         caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, pre->chip);
 
-     //T    caerDynapseWriteSram(handle, pre->core, pre->neuron, pre->core, (bool)dirBits[0],
-          //T                  dirBits[1], (bool)dirBits[2], dirBits[3], (uint16_t) sramNumber, //first SRAM is for debbugging
-           //T                 it->destinationCores);
+         caerDynapseWriteSram(handle, pre->core, pre->neuron, pre->core, (bool)dirBits[0],
+                            dirBits[1], (bool)dirBits[2], dirBits[3], (uint16_t) sramNumber, //first SRAM is for debbugging
+                            it->destinationCores);
     }
 
     if(program_cam == true){
@@ -454,16 +457,20 @@ void ConnectionManager::MakeConnection( Neuron * pre, Neuron * post, uint8_t cam
         caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
 
         // Program CAM
-        //T caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, post->chip);
+        caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, post->chip);
 
         // For each cam in cam_slot_num
         int curr_cam_size = post->CAM.size();
         uint8_t n = find_next_unused_cam(post->CAM);
         Synapse * syn = new Synapse(pre, connection_type, (uint8_t)(n));
         post->CAM.push_back(syn);
-        caerLog(CAER_LOG_NOTICE, __func__, syn->GetLocString().c_str());
-       //T      caerDynapseWriteCam(handle, NeuronCamAddress(pre->neuron, pre->core), NeuronCamAddress(post->neuron,post->core),
-        //T                     (uint32_t) n, connection_type);
+        caerLog(CAER_LOG_DEBUG, __func__, syn->GetLocString().c_str());
+        caerDynapseWriteCam(
+            handle,
+            NeuronCamAddress(pre->neuron, pre->core),
+            NeuronCamAddress(post->neuron,post->core),
+            (uint32_t) n,
+            connection_type);
     }
 }
 
@@ -485,7 +492,7 @@ bool ConnectionManager::CheckAndConnect(Neuron * pre, Neuron * post, uint8_t cam
     if(valid_connection){
         if(connection_type < 0 & connection_type > 3){
             message = "Invalid Connection Type: " + connection_type;
-            caerLog(CAER_LOG_NOTICE, __func__, message.c_str());
+            caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
             valid_connection = false;
         }
     }
@@ -654,8 +661,8 @@ void ConnectionManager::SetBias(uint8_t chip_n ,uint8_t core_n , const char *bia
     caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
 
     try{
-    //T     caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, U32T(chip_n));
-   //T      caerDynapseSetBiasCore(node, chip_n, core_n, biasName, coarse_value, fine_value, high_low);
+         caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, U32T(chip_n));
+         caerDynapseSetBiasCore(node, chip_n, core_n, biasName, coarse_value, fine_value, high_low);
     }
     catch (const string e){
         caerLog(CAER_LOG_NOTICE, __func__, e.c_str());
@@ -670,8 +677,8 @@ void ConnectionManager::SetTau2(uint8_t chip_n ,uint8_t core_n, uint8_t neuron_n
                      "N:" + to_string(neuron_n);
     caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
     try{
-   //T      caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, chip_n); // Select the chip
-   //T      caerDeviceConfigSet(handle, DYNAPSE_CONFIG_TAU2_SET, core_n, neuron_n); // Set tau2 for a specific neuron
+         caerDeviceConfigSet(handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, chip_n); // Select the chip
+         caerDeviceConfigSet(handle, DYNAPSE_CONFIG_TAU2_SET, core_n, neuron_n); // Set tau2 for a specific neuron
     }
     catch (const string e){
         caerLog(CAER_LOG_NOTICE, __func__, e.c_str());
@@ -733,40 +740,15 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
                       currentConnection.push_back(static_cast<int>(cv[i]));
                     }
                     manager->inputTable.push_back(currentConnection);
+                    currentConnection.clear();
 
                     //Add non-existing connections
-                    if(!manager->ExistsConnection(ppre,ppost,3)){ 
+                    if(!manager->ExistsConnection(ppre,ppost,cv[3])){ 
                     manager->Connect(ppre,ppost,cv[4],cv[3]);
-                    cv.clear();
                     } else {
                       caerLog(CAER_LOG_NOTICE, __func__, "Connection Already Exists");
                     }
-
-                    //Delete connections not in inputTable
-                    manager->find_connections_to_delete();
-
-                    //for(auto cv: manager->diffTable){
-
-                    for(auto icv = manager->diffTable.begin();
-                        icv != manager->diffTable.end();
-                        ++icv){
-
-                    string message = "CV VALUE IS THIS: "; 
-                    printf("%d %d %d %d \n",(*icv)[0],(*icv)[1],(*icv)[2],(*icv)[3]);
-                    printf("%d %d %d\n",(*icv)[5],(*icv)[6],(*icv)[7]);
-                    caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
-
-                    Neuron * ppre = new Neuron((*icv)[0],(*icv)[1],(*icv)[2]);
-                    Neuron * ppost = new Neuron((*icv)[5],(*icv)[6],(*icv)[7]);
-                    if(manager->ExistsConnection(ppre,ppost,3)){ 
-                      printf("exists!");
-                      Neuron* pre = manager->GetNeuron(ppre);
-                      Synapse* syn = new Synapse(pre, (*icv)[3]);
-                      Neuron* post = manager->GetNeuron(ppost);
-                      manager->DeleteConnection(syn, post);
-                    }
-                    }
-
+                    cv.clear();
 
 
                 } else{
@@ -778,13 +760,64 @@ bool ReadNetTXT (ConnectionManager * manager, string filepath) {
             }
         }
         netFile.close();
+
+        //printf("Number of differences %d %d %d\n", manager->diffTable.size(), manager->inputTable.size(), manager->currentTable.size());
+        manager->find_connections_to_delete();
+
+        //printf("Number of differences %d\n", manager->diffTable.size());
+        for(auto icv = manager->diffTable.begin();
+            icv != manager->diffTable.end();
+            ++icv){
+
+        string message = "CV VALUE IS THIS: "; 
+        caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
+        //printf("%d %d %d %d \n",(*icv)[0],(*icv)[1],(*icv)[2],(*icv)[3]);
+        //printf("%d %d %d\n",(*icv)[5],(*icv)[6],(*icv)[7]);
+
+        Neuron * ppre = new Neuron((*icv)[0],(*icv)[1],(*icv)[2]);
+        Neuron * ppost = new Neuron((*icv)[5],(*icv)[6],(*icv)[7]);
+        if(manager->ExistsConnection(ppre,ppost, (*icv)[3])){ 
+          Neuron* pre = manager->GetNeuron(ppre);
+          Synapse* syn = new Synapse(pre, (*icv)[3]);
+          Neuron* post = manager->GetNeuron(ppost);
+          manager->DeleteConnection(syn, post);
+        }
+
+
+        }
+
+        for(auto icv = manager->diffTable.begin();
+            icv != manager->diffTable.end();
+            ++icv){
+
+        string message = "CV VALUE IS THIS: "; 
+        caerLog(CAER_LOG_DEBUG, __func__, message.c_str());
+        //printf("%d %d %d %d \n",(*icv)[0],(*icv)[1],(*icv)[2],(*icv)[3]);
+        //printf("%d %d %d\n",(*icv)[5],(*icv)[6],(*icv)[7]);
+
+        Neuron * ppre = new Neuron((*icv)[0],(*icv)[1],(*icv)[2]);
+        Neuron * ppost = new Neuron((*icv)[5],(*icv)[6],(*icv)[7]);
+        if(manager->ExistsConnection(ppre,ppost, (*icv)[3])){ 
+          caerLog(CAER_LOG_ERROR, __func__, "Connection still exists!\n");
+          Neuron* pre = manager->GetNeuron(ppre);
+          Synapse* syn = new Synapse(pre, (*icv)[3]);
+          Neuron* post = manager->GetNeuron(ppost);
+          manager->DeleteConnection(syn, post);
+        }
+
+
+        }
+
+
+        manager->currentTable.clear();
         manager->currentTable = manager->inputTable;
         manager->inputTable.clear();
+        manager->diffTable.clear();
         return true;        
 
     }
     else{
-        caerLog(CAER_LOG_ERROR, __func__, ("unable to open file: " + filepath).c_str());  
+        caerLog(CAER_LOG_ERROR, __func__, ("Unable to open file: " + filepath).c_str());  
         return false;
     } 
 
@@ -1000,4 +1033,27 @@ bool ReadBiasesTauTXT (ConnectionManager * manager, string filepath) {
         caerLog(CAER_LOG_ERROR, __func__, ("unable to open file: " + filepath).c_str());  
         return false;
     } 
+}
+
+uint8_t find_next_unused_cam(vector<Synapse *> CAM){
+      vector<uint8_t> v1 (0);
+      //64 CAMs per neuron
+      for( uint8_t i = 0; i <= 64; i++ ) v1.push_back( i );
+
+      vector<uint8_t> v2 (0);
+      for(auto i: CAM) v2.push_back( (*i).camid );
+
+      vector<uint8_t> diff;
+
+      //DEBUG      for (auto i : v1) std::cout << unsigned(i) << ' ';
+      //DEBUG      std::cout << "minus ";
+      //DEBUG      for (auto i : v2) std::cout << unsigned(i) << ' ';
+      //DEBUG      std::cout << "is: ";
+
+      set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), 
+                        inserter(diff, diff.begin())); 
+
+      //DEBUG for (auto i : diff) std::cout << unsigned(i) << ' ';
+      //DEBUG std::cout << '\n';
+      return diff.front();
 }
