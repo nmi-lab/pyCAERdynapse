@@ -39,37 +39,43 @@ class Mappings(MappingsBase):
 
     @doc_inherit
     def add_mappings(self, mappings):
-        mappings = np.array(mappings, dtype='uint32')
+
         n_connections = len(mappings)
-        nsetup = self.neurosetup
-        mon_chad = nsetup.mon.addrPhysicalExtract(mappings[:,0])
-        seq_chad = nsetup.seq.addrPhysicalExtract(mappings[:,1])
+        if n_connections>0:
+            mappings = np.array(mappings, dtype='uint32')
+            nsetup = self.neurosetup
+            mon_chad = nsetup.mon.addrPhysicalExtract(mappings[:,0])
+            seq_chad = nsetup.seq.addrPhysicalExtract(mappings[:,1])
 
-        #channels = [i for i,c in enumerate(mon_chad) if c is not None ] 
-        #assert len(channels) == 1, 'cross chip connections not yet supported'
-        
-        src_chip = nsetup.mon.extract_channels(mappings[:,0])
-        dst_chip = nsetup.seq.extract_channels(mappings[:,1])
+            #channels = [i for i,c in enumerate(mon_chad) if c is not None ] 
+            #assert len(channels) == 1, 'cross chip connections not yet supported'
+            
+            src_chip = nsetup.mon.extract_channels(mappings[:,0])
+            dst_chip = nsetup.seq.extract_channels(mappings[:,1])
 
-        with open(self.local_filename, 'w') as f:
-            f.write('#Writing pyNCS Connections')
-            for i in range(n_connections):
-                src_chip, dst_chip = nsetup.mon.extract_channels(mappings[i])
-                src_neuron, src_core = nsetup.mon[src_chip].addrPhysicalExtract(mappings[i:i+1,0])
-                fs, ei, dst_neuron, dst_core = nsetup.seq[dst_chip].addrPhysicalExtract(mappings[i:i+1,1])
-                synapse = fs+(ei*2)
-                s = 'U{:02d}-C{:02d}-N{:03d}->{:01d}-1-U{:02d}-C{:02d}-N{:03d}\n'.format( 
-                    src_chip,
-                    src_core[0],
-                    src_neuron[0],
-                    synapse[0], 
-                    dst_chip,
-                    dst_core[0], 
-                    dst_neuron[0])
-                f.write(s)
+            with open(self.local_filename, 'w') as f:
+                f.write('#Writing pyNCS Connections, N: {0}\n'.format(n_connections))
+                for i in range(n_connections):
+                    src_chip, dst_chip = nsetup.mon.extract_channels(mappings[i])
+                    src_neuron, src_core = nsetup.mon[src_chip].addrPhysicalExtract(mappings[i:i+1,0])
+                    fs, ei, dst_neuron, dst_core = nsetup.seq[dst_chip].addrPhysicalExtract(mappings[i:i+1,1])
+                    synapse = fs+(ei*2)
+                    s = 'U{:02d}-C{:02d}-N{:03d}->{:01d}-1-U{:02d}-C{:02d}-N{:03d}\n'.format( 
+                        src_chip,
+                        src_core[0],
+                        src_neuron[0],
+                        synapse[0], 
+                        dst_chip,
+                        dst_core[0], 
+                        dst_neuron[0])
+                    f.write(s)
+        else:
+            with open(self.local_filename, 'w') as f:
+                f.write('#Writing pyNCS Connections, N: {0}\n'.format(n_connections))
+            
         
         self._commit()
-        self.cur_mappings.append(mappings)
+        self.cur_mappings = mappings
         return None
 
 
@@ -149,7 +155,7 @@ class Mappings(MappingsBase):
         else:
             ftp = ftplib.FTP(self.host, user='pyncs')
             ftp.storlines('STOR {0}'.format(self.filename),
-                    open('{0}'.format(self.local_filename),'r'))
+                    open('{0}'.format(self.local_filename),'rb'))
             ftp.close()
             while conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool').strip('\x00'.encode()) is "true":
                 print(conf.get_caer_sshs("/netparser/", "ProgramNetworkFrom.txt", 'bool'))
