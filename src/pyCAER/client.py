@@ -65,7 +65,7 @@ class AEDATClientBase(threading.Thread):
         # Set the socket to non-blocking (with timeout) to avoid the thread
         # being stuck. Because of this, I must catch EWOULDBLOCK error
         #Frame period
-        self.fT = 1./50
+        self.fT = 1./100
         self.sock.settimeout(5.0)
 
 
