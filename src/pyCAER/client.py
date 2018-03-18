@@ -290,7 +290,7 @@ class AEDATClient(AEDATMonClient):
             context=None,
             filter_duplicates=False,
             debug=False,
-            verbose=True,
+            verbose=True, **kwargs
             ):
         '''
         NOTE: OLD DOCUMENTATION !!

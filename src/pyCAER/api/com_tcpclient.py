@@ -1,6 +1,8 @@
 from pyNCSre.api.ComAPI import *
 import pyCAER.client as caerclient
-from pyCAER.utils import doc_inherit
+from pyCAER.utils import doc_inherit, getuser, flatten
+import time, ftplib
+import os
 
 #Has a single client.
 #Instanciated object can be reused
@@ -56,6 +58,13 @@ class Communicator(ContinuousCommunicatorBase):
         stim_kwargs.update([
             ['tDuration', duration],
             ['context', context_manager]])
+        
+        try:
+            if (stim_kwargs['spikefile'] is not None):
+                self.send_transfer(stim_kwargs['spikefile'])
+        except:
+            pass
+        
         self.out = self.client.stimulate(stimulus, **stim_kwargs)
         return self.out
 
@@ -67,3 +76,14 @@ class Communicator(ContinuousCommunicatorBase):
     def close(self):
         self._isopen = False
         self.client.stop()
+        
+    def send_transfer(self, s_file ):
+        """ updates the remote file with the local one """       
+        ftp = ftplib.FTP(self.kwargs['host'], user='pyncs')
+#         ftp.set_debuglevel(2)
+       
+        file = open(  os.getcwd() + '/' + s_file, 'rb' )
+        filename = '{}_'.format(s_file) + getuser()
+        ftp.storlines('STOR {}'.format( filename ), file)
+        ftp.close()
+        
