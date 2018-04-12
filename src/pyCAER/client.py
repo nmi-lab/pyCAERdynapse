@@ -290,7 +290,7 @@ class AEDATClient(AEDATMonClient):
             context=None,
             filter_duplicates=False,
             debug=False,
-            verbose=True,
+            verbose=True, **kwargs
             ):
         '''
         NOTE: OLD DOCUMENTATION !!
@@ -363,7 +363,7 @@ class AEDATClient(AEDATMonClient):
         #    pass
 
         if verbose:
-            print("Recieving...")
+            print("Receiving...")
         received = self.listen(tDuration=tDuration, filter_duplicates=filter_duplicates)
         return received
             

@@ -1,6 +1,8 @@
 from pyNCSre.api.ComAPI import *
 import pyCAER.client as caerclient
-from pyCAER.utils import doc_inherit
+from pyCAER.utils import doc_inherit, getuser, flatten
+import time, ftplib
+import os
 
 #Has a single client.
 #Instanciated object can be reused
@@ -56,6 +58,13 @@ class Communicator(ContinuousCommunicatorBase):
         stim_kwargs.update([
             ['tDuration', duration],
             ['context', context_manager]])
+        
+        try:
+            if (stim_kwargs['spikefile'] is not None):
+                self.send_transfer(stim_kwargs['spikefile'])
+        except:
+            pass
+        
         self.out = self.client.stimulate(stimulus, **stim_kwargs)
         return self.out
 
@@ -67,3 +76,38 @@ class Communicator(ContinuousCommunicatorBase):
     def close(self):
         self._isopen = False
         self.client.stop()
+        
+    def send_transfer(self, stimulus, s_file ):
+        """ updates the remote file with the local one """
+        one_isi = 11.11 # ns
+        isi_base = 900
+#         isi_scale = isi_base * one_isi / 1000 # microseconds
+        isi_scale = 1
+        dest_dir = '/var/opt/pyncs/'
+        s_path = os.getcwd() + '/' + s_file
+        dest_file = '{}_{}'.format(s_file,getuser())
+        ftp = ftplib.FTP(self.kwargs['host'], user='pyncs')
+#         ftp.set_debuglevel(2)
+        
+        conf = self.neurosetup.chips['U0'].configurator
+        
+        with open( s_path, 'w' ) as f:
+            for stim in stimulus:
+                isi = int(round(stim[1] * isi_scale))
+                if ( isi > 2**16-1 ):
+                    isi = 2**16-1
+                f.write( '{},{}\n'.format(stim[0] & (2**14-1), isi ))
+
+        with open( s_path, 'rb' ) as f:
+            ftp.storlines('STOR {}'.format( dest_file ), f)
+            ftp.close()
+
+        conf.set_caer_sshs("/fpgaSpikeGen/", "Run", 'bool', "false")
+        time.sleep(.2)    
+        conf.set_caer_sshs("/fpgaSpikeGen/", "VariableISI", 'bool', "true")
+        conf.set_caer_sshs("/fpgaSpikeGen/", "ISIBase", 'int', '{}'.format(isi_base))
+        conf.set_caer_sshs("/fpgaSpikeGen/", "StimFile", 'string', dest_dir + dest_file)
+        conf.set_caer_sshs("/fpgaSpikeGen/", "WriteSRAM", 'bool', "true")
+        time.sleep(1)
+        conf.set_caer_sshs("/fpgaSpikeGen/", "Repeat", 'bool', "true")
+        conf.set_caer_sshs("/fpgaSpikeGen/", "Run", 'bool', "true")

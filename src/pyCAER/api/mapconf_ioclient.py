@@ -51,13 +51,15 @@ class Mappings(MappingsBase):
             #assert len(channels) == 1, 'cross chip connections not yet supported'
             
             src_chip = nsetup.mon.extract_channels(mappings[:,0])
+            # Virtual chips always get mapped to chip 0 here
+            src_chip[src_chip>=4] = 0
             dst_chip = nsetup.seq.extract_channels(mappings[:,1])
 
             with open(self.local_filename, 'w') as f:
                 f.write('#Writing pyNCS Connections, N: {0}\n'.format(n_connections))
                 for i in range(n_connections):
                     src_chip, dst_chip = nsetup.mon.extract_channels(mappings[i])
-                    src_neuron, src_core = nsetup.mon[src_chip].addrPhysicalExtract(mappings[i:i+1,0])
+                    src_neuron, src_core = nsetup.mon[src_chip].addrPhysicalExtract(mappings[i:i+1,0])[:2]
                     fs, ei, dst_neuron, dst_core = nsetup.seq[dst_chip].addrPhysicalExtract(mappings[i:i+1,1])
                     synapse = fs+(ei*2)
                     s = 'U{:02d}-C{:02d}-N{:03d}->{:01d}-1-U{:02d}-C{:02d}-N{:03d}\n'.format( 
