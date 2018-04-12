@@ -363,7 +363,7 @@ class AEDATClient(AEDATMonClient):
         #    pass
 
         if verbose:
-            print("Recieving...")
+            print("Receiving...")
         received = self.listen(tDuration=tDuration, filter_duplicates=filter_duplicates)
         return received
             

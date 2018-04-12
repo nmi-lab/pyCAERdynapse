@@ -77,13 +77,37 @@ class Communicator(ContinuousCommunicatorBase):
         self._isopen = False
         self.client.stop()
         
-    def send_transfer(self, s_file ):
-        """ updates the remote file with the local one """       
+    def send_transfer(self, stimulus, s_file ):
+        """ updates the remote file with the local one """
+        one_isi = 11.11 # ns
+        isi_base = 900
+#         isi_scale = isi_base * one_isi / 1000 # microseconds
+        isi_scale = 1
+        dest_dir = '/var/opt/pyncs/'
+        s_path = os.getcwd() + '/' + s_file
+        dest_file = '{}_{}'.format(s_file,getuser())
         ftp = ftplib.FTP(self.kwargs['host'], user='pyncs')
 #         ftp.set_debuglevel(2)
-       
-        file = open(  os.getcwd() + '/' + s_file, 'rb' )
-        filename = '{}_'.format(s_file) + getuser()
-        ftp.storlines('STOR {}'.format( filename ), file)
-        ftp.close()
         
+        conf = self.neurosetup.chips['U0'].configurator
+        
+        with open( s_path, 'w' ) as f:
+            for stim in stimulus:
+                isi = int(round(stim[1] * isi_scale))
+                if ( isi > 2**16-1 ):
+                    isi = 2**16-1
+                f.write( '{},{}\n'.format(stim[0] & (2**14-1), isi ))
+
+        with open( s_path, 'rb' ) as f:
+            ftp.storlines('STOR {}'.format( dest_file ), f)
+            ftp.close()
+
+        conf.set_caer_sshs("/fpgaSpikeGen/", "Run", 'bool', "false")
+        time.sleep(.2)    
+        conf.set_caer_sshs("/fpgaSpikeGen/", "VariableISI", 'bool', "true")
+        conf.set_caer_sshs("/fpgaSpikeGen/", "ISIBase", 'int', '{}'.format(isi_base))
+        conf.set_caer_sshs("/fpgaSpikeGen/", "StimFile", 'string', dest_dir + dest_file)
+        conf.set_caer_sshs("/fpgaSpikeGen/", "WriteSRAM", 'bool', "true")
+        time.sleep(1)
+        conf.set_caer_sshs("/fpgaSpikeGen/", "Repeat", 'bool', "true")
+        conf.set_caer_sshs("/fpgaSpikeGen/", "Run", 'bool', "true")

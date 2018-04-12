@@ -51,6 +51,8 @@ class Mappings(MappingsBase):
             #assert len(channels) == 1, 'cross chip connections not yet supported'
             
             src_chip = nsetup.mon.extract_channels(mappings[:,0])
+            # Virtual chips always get mapped to chip 0 here
+            src_chip[src_chip>=4] = 0
             dst_chip = nsetup.seq.extract_channels(mappings[:,1])
 
             with open(self.local_filename, 'w') as f:
