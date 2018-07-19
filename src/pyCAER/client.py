@@ -73,8 +73,6 @@ class AEDATClientBase(threading.Thread):
 
     def run(self):
         while self.finished.isSet() != True:
-            t0 = time.time()
-
             with self.recvlock:
                 self.fetch_raw()
 
