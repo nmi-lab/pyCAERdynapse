@@ -365,24 +365,5 @@
                 <attr key="PacketContainerMaxPacketSize" type="int">0</attr>
             </node>
         </node>
-        <node name="noisefilter" path="/noisefilter/">
-            <attr key="backgroundActivityCheckPolarity" type="bool">false</attr>
-            <attr key="backgroundActivityEnable" type="bool">true</attr>
-            <attr key="backgroundActivitySupportMax" type="byte">8</attr>
-            <attr key="backgroundActivitySupportMin" type="byte">1</attr>
-            <attr key="backgroundActivityTime" type="int">2000</attr>
-            <attr key="backgroundActivityTwoLevels" type="bool">false</attr>
-            <attr key="hotPixelCount" type="int">10000</attr>
-            <attr key="hotPixelEnable" type="bool">false</attr>
-            <attr key="hotPixelLearn" type="bool">false</attr>
-            <attr key="hotPixelTime" type="int">1000000</attr>
-            <attr key="logLevel" type="byte">5</attr>
-            <attr key="moduleId" type="short">2</attr>
-            <attr key="moduleInput" type="string">1[1]</attr>
-            <attr key="moduleLibrary" type="string">caer_dvsnoisefilter</attr>
-            <attr key="refractoryPeriodEnable" type="bool">true</attr>
-            <attr key="refractoryPeriodTime" type="int">100</attr>
-            <attr key="runAtStartup" type="bool">true</attr>
-        </node>
     </node>
 </sshs>
