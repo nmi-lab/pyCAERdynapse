@@ -63,7 +63,7 @@ class AEDATClientBase(threading.Thread):
         # Set the socket to non-blocking (with timeout) to avoid the thread
         # being stuck. Because of this, I must catch EWOULDBLOCK error
         #Frame period
-        self.fT = 1./100
+        self.fT = 1./20
         self.sock.settimeout(5.0)
 
 
@@ -79,9 +79,9 @@ class AEDATClientBase(threading.Thread):
                 self.fetch_raw()
 
             #Fastest frame rate should be 1/fT. Wait in case we've been faster
-            t_left = self.fT - (time.time() - t0)
-            if t_left > 0:
-                time.sleep(t_left)
+            #t_left = self.fT - (time.time() - t0)
+            #if t_left > 0:
+            #    time.sleep()
             # Ok now check how much data is available and choose a multiple of
             # 8 (AE packet size
 
