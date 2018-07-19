@@ -10,15 +10,16 @@
 # Licence : GPLv2
 #----------------------------------------------------------------------------- 
 import pyCAER
+import time
 #import cv2
 #cv2.namedWindow('frame', cv2. WINDOW_NORMAL)
 
 c = pyCAER.client.AEDATMonClient(host='localhost', port=7777, eventtypes=[1])
 
-
+c.flush()
 while True:
     events = c.fetch()
-    raw_ad = events.get_ad()
+    raw_ad = events[:,0]
     x = (raw_ad >> 12) & 0x3ff
     y = (raw_ad >> 22) & 0x3ff
     p = (raw_ad >> 62) 
