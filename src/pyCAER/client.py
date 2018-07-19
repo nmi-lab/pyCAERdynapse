@@ -63,7 +63,7 @@ class AEDATClientBase(threading.Thread):
         # Set the socket to non-blocking (with timeout) to avoid the thread
         # being stuck. Because of this, I must catch EWOULDBLOCK error
         #Frame period
-        self.fT = 1./20
+        self.fT = 1./100
         self.sock.settimeout(5.0)
 
 
@@ -197,6 +197,34 @@ class AEDATMonClient(AEDATClientBase):
                 x.add_adtmev(self.buffer.get(block=False).get_adtmev())
             except queue.Empty:
                 return x.get_adtmev()
+
+    def listen_raw(self):
+        '''
+        empties the queue & returns a SpikeList containing the data that was in the Queue
+        synposis: client.flush(); time.sleep(1); out=client.listen()
+        @author emre@ini.phys.ethz.ch, andstein@student.ethz.ch
+
+        *tDuration*: is a float defining the duration to be listened (in ms)
+        *output*: is a string defining in what form the output should be returned. Default is SpikeList where a NeuroTools.signal SpikeList is returned. Other possiblities are 'array' where a normalized numpy array is returned and 'raw' where a pyST.channelEvents object is returned.
+        *filter_duplicates* if True erase in all channels double events within the a 0.01ms time-frame (buggy hw)
+        '''
+
+        #initialize output channelEvents
+        out = events(atype='p')
+        while True:
+            try:
+                evs = self.buffer.get(block=False)
+            except queue.Empty:
+                break
+
+            if evs.get_nev() > 0:
+                ad = evs.get_ad()
+                tm = evs.get_tm()
+                out.add_adtm(ad,tm)
+                    
+        tm = out.get_tm()
+        out.set_tm(tm)
+        return out.get_adtmev()
 
     def listen(self, tDuration=1000, filter_duplicates=False):
         '''
