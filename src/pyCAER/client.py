@@ -9,7 +9,6 @@ import fcntl
 from termios import FIONREAD
 from contextlib import contextmanager
 #AER related
-import pyNCSre.pyST as pyST
 from .utils import *
 
 #Special events used to control reset and synchonization
@@ -35,6 +34,7 @@ class AEDATClientBase(threading.Thread):
             port=7778,
             autostart=True,
             qsize=4096,
+            eventtypes = [12],
             ):
         '''
         *MonChannelAddress:* Monitor Channel Addressing object, if omitted, default channel is taken
@@ -48,8 +48,13 @@ class AEDATClientBase(threading.Thread):
         #self.aexfd = os.open("/dev/aerfx2_0", os.O_RDWR | os.O_NONBLOCK)
         self.finished = threading.Event()
         self.buffer = queue.Queue(qsize)  # 8192 packets in Queue=~5min
+        self.eventtypes = eventtypes
 
-        self.MonChannelAddress = pyST.getDefaultMonChannelAddress()
+        try:
+            import pyNCSre.pyST as pyST
+            self.MonChannelAddress = pyST.getDefaultMonChannelAddress()
+        except ModuleNotFoundError:
+            print('pyNCSre not found, skipping pyNCSre related configuration')
 
 
         self.recvlock = threading.Lock()
@@ -65,7 +70,7 @@ class AEDATClientBase(threading.Thread):
         # Set the socket to non-blocking (with timeout) to avoid the thread
         # being stuck. Because of this, I must catch EWOULDBLOCK error
         #Frame period
-        self.fT = 1./100
+        self.fT = 1./20
         self.sock.settimeout(5.0)
 
 
@@ -132,7 +137,7 @@ class AEDATMonClient(AEDATClientBase):
         eventnumber = struct.unpack('I', data_ev_head[20:24])[0]
         eventvalid = struct.unpack('I', data_ev_head[24:28])[0]
         next_read = eventcapacity * eventsize
-        if(eventtype == 12):
+        if(eventtype in self.eventtypes):
             data = ''.encode()
             while len(data)<next_read:
                 data += self.sock.recv(next_read-len(data))
@@ -261,8 +266,12 @@ class AEDATClient(AEDATMonClient):
         *qsize*: is the size of the queue (FIFO). This is automatically adjusted if the buffer is too small.
         '''
 
-        self.MonChannelAddress = pyST.getDefaultMonChannelAddress()
-        self.SeqChannelAddress = pyST.getDefaultSeqChannelAddress()
+        try:
+            import pyNCSre.pyST as pyST
+            self.MonChannelAddress = pyST.getDefaultMonChannelAddress()
+            self.SeqChannelAddress = pyST.getDefaultSeqChannelAddress()
+        except ModuleNotFoundError:
+            print('pyNCSre not found, skipping pyNCSre related configuration')
 
         AEDATMonClient.__init__(
                 self, 

@@ -3,6 +3,8 @@ import pyCAER.client as caerclient
 from pyCAER.utils import doc_inherit, getuser, flatten
 import time, ftplib
 import os
+from pyNCSre.pyST import events
+from pyNCSre.pyST import channelEvents
 
 #Has a single client.
 #Instanciated object can be reused
