@@ -365,57 +365,6 @@
                 <attr key="PacketContainerMaxPacketSize" type="int">0</attr>
             </node>
         </node>
-        <node name="eventVisualizer" path="/eventVisualizer/">
-            <attr key="DoubleSpacedAddresses" type="bool">false</attr>
-            <attr key="eventHandler" type="string"/>
-            <attr key="eventHandlerListOptionsMulti" type="string">Neuron_Monitor,Input</attr>
-            <attr key="logLevel" type="byte">5</attr>
-            <attr key="moduleId" type="short">3</attr>
-            <attr key="moduleInput" type="string">1[1a2]</attr>
-            <attr key="moduleLibrary" type="string">caer_visualizer</attr>
-            <attr key="renderer" type="string">Polarity</attr>
-            <attr key="rendererListOptionsMulti" type="string">Polarity,Frame,IMU_6-axes,2D_Points,Spikes,Spikes_Raster_Plot,Polarity_and_Frames,Camera_pose,Polarity_and_2D_Points</attr>
-            <attr key="runAtStartup" type="bool">true</attr>
-            <attr key="showStatistics" type="bool">true</attr>
-            <attr key="subsampleRendering" type="int">1</attr>
-            <attr key="windowPositionX" type="int">732</attr>
-            <attr key="windowPositionY" type="int">396</attr>
-            <attr key="zoomFactor" type="float">2.000000</attr>
-        </node>
-        <node name="eventVisualizerUnfiltered" path="/eventVisualizerUnfiltered/">
-            <attr key="DoubleSpacedAddresses" type="bool">false</attr>
-            <attr key="eventHandler" type="string"/>
-            <attr key="eventHandlerListOptionsMulti" type="string">Neuron_Monitor,Input</attr>
-            <attr key="logLevel" type="byte">5</attr>
-            <attr key="moduleId" type="short">4</attr>
-            <attr key="moduleInput" type="string">1[1]</attr>
-            <attr key="moduleLibrary" type="string">caer_visualizer</attr>
-            <attr key="renderer" type="string">Polarity</attr>
-            <attr key="rendererListOptionsMulti" type="string">Polarity,Frame,IMU_6-axes,2D_Points,Spikes,Spikes_Raster_Plot,Polarity_and_Frames,Camera_pose,Polarity_and_2D_Points</attr>
-            <attr key="runAtStartup" type="bool">true</attr>
-            <attr key="showStatistics" type="bool">true</attr>
-            <attr key="subsampleRendering" type="int">1</attr>
-            <attr key="windowPositionX" type="int">100</attr>
-            <attr key="windowPositionY" type="int">100</attr>
-            <attr key="zoomFactor" type="float">2.000000</attr>
-        </node>
-        <node name="frameVisualizer" path="/frameVisualizer/">
-            <attr key="ROIRegion" type="int">-1</attr>
-            <attr key="eventHandler" type="string"/>
-            <attr key="eventHandlerListOptionsMulti" type="string">Neuron_Monitor,Input</attr>
-            <attr key="logLevel" type="byte">5</attr>
-            <attr key="moduleId" type="short">5</attr>
-            <attr key="moduleInput" type="string">1[2]</attr>
-            <attr key="moduleLibrary" type="string">caer_visualizer</attr>
-            <attr key="renderer" type="string">Frame</attr>
-            <attr key="rendererListOptionsMulti" type="string">Polarity,Frame,IMU_6-axes,2D_Points,Spikes,Spikes_Raster_Plot,Polarity_and_Frames,Camera_pose,Polarity_and_2D_Points</attr>
-            <attr key="runAtStartup" type="bool">true</attr>
-            <attr key="showStatistics" type="bool">true</attr>
-            <attr key="subsampleRendering" type="int">1</attr>
-            <attr key="windowPositionX" type="int">1262</attr>
-            <attr key="windowPositionY" type="int">127</attr>
-            <attr key="zoomFactor" type="float">2.000000</attr>
-        </node>
         <node name="noisefilter" path="/noisefilter/">
             <attr key="backgroundActivityCheckPolarity" type="bool">false</attr>
             <attr key="backgroundActivityEnable" type="bool">true</attr>
