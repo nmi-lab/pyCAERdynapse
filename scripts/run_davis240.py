@@ -23,11 +23,11 @@ while True:
     events = c.fetch()
     print(events)
     raw_ad = events[:,0]
-    x = (raw_ad >> 2) & 0x100
-    y = (raw_ad >> 17) & 0x100
+    x = (raw_ad >> 2) & 0xff
+    y = (raw_ad >> 17) & 0xff
     p = (raw_ad >> 1 ) & 0x1 
-    print(y,x,p)
-#    ev = np.zeros([240,180], 'float')
+    print(x,y,p)
+    ev = np.zeros([240,180], 'float')
 #    ev[x,y] = 2*p-1
 #    cv2.imshow('frame', PIL.Image.fromarray(np.uint8(pylab.cm.jet(ev.T*255)).convert('RGB')))
 #    if cv2.waitKey(1) & 0xFF == ord('q'):
