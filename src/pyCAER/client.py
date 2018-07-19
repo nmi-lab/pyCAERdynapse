@@ -50,13 +50,6 @@ class AEDATClientBase(threading.Thread):
         self.buffer = queue.Queue(qsize)  # 8192 packets in Queue=~5min
         self.eventtypes = eventtypes
 
-        try:
-            import pyNCSre.pyST as pyST
-            self.MonChannelAddress = pyST.getDefaultMonChannelAddress()
-        except ModuleNotFoundError:
-            print('pyNCSre not found, skipping pyNCSre related configuration')
-
-
         self.recvlock = threading.Lock()
         self._nbufferempty = False
         self.eventsPacket = np.array([])
@@ -266,12 +259,6 @@ class AEDATClient(AEDATMonClient):
         *qsize*: is the size of the queue (FIFO). This is automatically adjusted if the buffer is too small.
         '''
 
-        try:
-            import pyNCSre.pyST as pyST
-            self.MonChannelAddress = pyST.getDefaultMonChannelAddress()
-            self.SeqChannelAddress = pyST.getDefaultSeqChannelAddress()
-        except ModuleNotFoundError:
-            print('pyNCSre not found, skipping pyNCSre related configuration')
 
         AEDATMonClient.__init__(
                 self, 
