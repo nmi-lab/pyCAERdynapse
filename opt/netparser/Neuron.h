@@ -2,14 +2,14 @@
 // Created by rodrigo on 5/30/17.
 //
 
+//
+// Contributed to by Emre Neftci and Andrew Hansen on 02/15/18
+//
+
 #ifndef CAER_NEURON_H
 #define CAER_NEURON_H
 
 #endif //CAER_NEURON_H
-
-//
-// Created by rodrigo on 5/30/17.
-//
 
 #include <algorithm>    // std::find_if
 #include <iostream>
@@ -22,12 +22,12 @@
 #include <set>
 #include <fstream>
 #include <mxml.h>
-//TEST #include <libcaer/devices/dynapse.h>
-//TEST #include "modules/ini/dynapse_utils.h"
-//TEST #include "base/mainloop.h"
+#include <libcaer/devices/dynapse.h>
+#include "modules/ini/dynapse_utils.h"
+#include "base/mainloop.h"
 //
 // Following code to use this code in standalone mode
-#include "testcaer.h"
+//#include "testcaer.h"
 
 using namespace std;
 
@@ -45,28 +45,7 @@ struct Synapse {
     void Print() const;
 };
 
-uint8_t find_next_unused_cam(vector<Synapse *> CAM){
-      vector<uint8_t> v1 (0);
-      //64 CAMs per neuron
-      for( uint8_t i = 0; i <= 64; i++ ) v1.push_back( i );
-
-      vector<uint8_t> v2 (0);
-      for(auto i: CAM) v2.push_back( (*i).camid );
-
-      vector<uint8_t> diff;
-
-      //DEBUG      for (auto i : v1) std::cout << unsigned(i) << ' ';
-      //DEBUG      std::cout << "minus ";
-      //DEBUG      for (auto i : v2) std::cout << unsigned(i) << ' ';
-      //DEBUG      std::cout << "is: ";
-
-      set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), 
-                        inserter(diff, diff.begin())); 
-
-      //DEBUG for (auto i : diff) std::cout << unsigned(i) << ' ';
-      //DEBUG std::cout << '\n';
-      return diff.front();
-}
+uint8_t find_next_unused_cam(vector<Synapse *> CAM);
 
 struct Neuron {
     const uint8_t chip;
